@@ -1,0 +1,13 @@
+# Cloudflare Pages configuration
+# Используется только для `wrangler pages deploy` — НЕ для Git-интеграции
+
+name = "fenix-sanyamed"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "./out"
+
+# Кастомный домен — добавить после первого деплоя через Dashboard:
+# Pages → fenix-sanyamed → Custom domains → Add → fenix-sanyamed.com
+
+# Переменные окружения (заполнить через Dashboard или wrangler secret)
+# [vars]
+# NEXT_PUBLIC_SITE_URL = "https://fenix-sanyamed.com"

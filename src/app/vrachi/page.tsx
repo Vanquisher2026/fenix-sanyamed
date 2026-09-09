@@ -1,0 +1,87 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { VRACHI } from "@/data/vrachi";
+
+export const metadata: Metadata = {
+  title: "Врачи | Медицинский центр fenix-sanyamed",
+  description:
+    "Команда врачей традиционной китайской медицины с опытом более 20 лет. Профессора, доктора наук.",
+  alternates: {
+    canonical: "https://fenix-sanyamed.com/vrachi/",
+  },
+};
+
+export default function VrachiPage() {
+  return (
+    <main className="px-6 py-20">
+      {/* === HEADER === */}
+      <section className="mx-auto max-w-4xl text-center">
+        <p className="hero-eyebrow mb-6">
+          <span className="gold-line" />
+          Врачи
+          <span className="gold-line" />
+        </p>
+        <h1 className="mb-6">Команда врачей</h1>
+        <span className="gold-line mx-auto my-6 block" />
+        <p className="font-serif text-lg italic text-zinc-600">
+          Профессора, доктора наук, врачи-ветераны с клиническим опытом от
+          20 до 40+ лет. Выпускники ведущих китайских университетов
+          традиционной китайской медицины.
+        </p>
+      </section>
+
+      <div className="mx-auto my-16 max-w-md">
+        <div className="divider-double" />
+      </div>
+
+      {/* === 8 ВРАЧЕЙ === */}
+      <section className="mx-auto max-w-6xl">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          {VRACHI.map((v, idx) => (
+            <Link
+              key={v.slug}
+              href={`/vrachi/${v.slug}/`}
+              className="card-luxury group block text-center"
+            >
+              <span className="mb-3 inline-block font-display text-4xl text-[var(--secondary-dark)]">
+                {String(idx + 1).padStart(2, "0")}
+              </span>
+              <h3 className="mb-1">{v.nameRu}</h3>
+              <p className="mb-3 font-ui text-xs uppercase tracking-luxury text-zinc-500">
+                {v.nameCn} · {v.birthYear} г.р.
+              </p>
+              <span className="gold-line mx-auto mb-3 block" />
+              <p className="mb-3 font-serif text-base italic text-[var(--primary)]">
+                {v.position}
+              </p>
+              <p className="mb-4 font-serif leading-relaxed text-zinc-700">
+                {v.description}
+              </p>
+              <p className="font-ui text-xs uppercase tracking-luxury text-[var(--primary)] group-hover:text-[var(--primary-dark)]">
+                Подробнее о враче →
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <div className="mx-auto my-20 max-w-md">
+        <div className="divider-double" />
+      </div>
+
+      <section className="mx-auto max-w-2xl text-center">
+        <p className="hero-eyebrow mb-4">Важно</p>
+        <p className="font-serif italic leading-relaxed text-zinc-700">
+          Индивидуальные результаты лечения могут отличаться. Программа
+          всегда подбирается врачом индивидуально на основании пульсовой
+          диагностики.
+        </p>
+        <div className="mt-8">
+          <Link href="/kontakty/" className="btn-luxury">
+            Записаться на приём
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
+}
