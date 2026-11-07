@@ -1,14 +1,28 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getTerapiiSeo } from "@/data/seo/terapii.seo";
+
+const SEO = getTerapiiSeo("tuyna");
 
 // ⚠️ ЧЕРНОВИК — все цифры, имена и показания должны быть подтверждены клиентом.
 
 export const metadata: Metadata = {
-  title: "Массаж Туйна в медицинском центре fenix-sanyamed | Цены · Запись · Отзывы",
+  // title 按 GSC 词序打法补 «на Хайнане»（同 igloukalyvanie 2026-11-07 的修正）
+  title: "Массаж Туйна на Хайнане — цены и запись в Санья",
   description:
-    "Китайский лечебный массаж Туйна в медицинском центре традиционной медицины fenix-sanyamed на Хайнане. Индивидуальные программы, русскоязычные переводчики, опытные мастера.",
+    "Китайский лечебный массаж Туйна на Хайнане: центр традиционной медицины в Санья. Индивидуальные программы после диагностики, русскоязычный координатор, мастера с опытом 40+ лет. Цены на курс.",
   alternates: {
-    canonical: "https://fenix-sanyamed.com/terapii/tuyna/",
+    canonical: "https://www.fenix-sanyamed.com/terapii/tuyna/",
+    // hreflang ВЗАИМЕН: EN-страница /en/terapii/tuyna/ уже ссылается
+    // сюда (ru + x-default), но RU-страница не отвечала → Яндекс/Google
+    // игнорируют весь кластер. Статический маршрут затеняет динамический
+    // terapii/[slug], поэтому блок languages нужно дублировать здесь
+    // (см. terapii/igloukalyvanie/page.tsx).
+    languages: {
+      ru: "https://www.fenix-sanyamed.com/terapii/tuyna/",
+      "x-default": "https://www.fenix-sanyamed.com/terapii/tuyna/",
+      en: "https://www.fenix-sanyamed.com/en/terapii/tuyna/",
+    },
   },
 };
 
@@ -26,13 +40,13 @@ const procedureSchema = {
   preparation: "Консультация врача, пульсовая диагностика, сбор анамнеза",
   provider: {
     "@type": "MedicalClinic",
-    "@id": "https://fenix-sanyamed.com/#clinic",
+    "@id": "https://www.fenix-sanyamed.com/#clinic",
   },
 };
 
 export default function TuynaPage() {
   return (
-    <main className="mx-auto max-w-4xl px-4 py-12">
+    <main id="main" className="mx-auto max-w-4xl px-4 py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }}
@@ -51,7 +65,7 @@ export default function TuynaPage() {
       </nav>
 
       <h1 className="mb-6 text-4xl font-bold">
-        Массаж Туйна в медицинском центре fenix-sanyamed на Хайнане
+        Массаж Туйна на Хайнане — центр ТКМ в Санья
       </h1>
 
       <section className="mb-12">
@@ -170,6 +184,26 @@ export default function TuynaPage() {
           <li>в раннем послеоперационном периоде</li>
         </ul>
       </section>
+
+      {/* === B3: ПОСЛЕ СЕАНСА === */}
+      {SEO && (
+        <section className="mb-12">
+          <h2 className="mb-4 text-2xl font-semibold">
+            После сеанса: что происходит
+          </h2>
+          <p className="leading-relaxed">{SEO.after}</p>
+        </section>
+      )}
+
+      {/* === B3: КАК ПОДГОТОВИТЬСЯ === */}
+      {SEO && (
+        <section className="mb-12">
+          <h2 className="mb-4 text-2xl font-semibold">
+            Как подготовиться к приёму
+          </h2>
+          <p className="leading-relaxed">{SEO.combination}</p>
+        </section>
+      )}
 
       <section className="mb-12">
         <h2 className="mb-4 text-2xl font-semibold">FAQ — Туйна</h2>

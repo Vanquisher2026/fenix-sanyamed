@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<!-- TAIJI Sanatorium (fenix-sanyamed.com) price feed.
+     156 TCM procedures, Sanya, Hainan. Prices in CNY per session.
+     Auto-generated from src/data/prices.real.ts (scripts/make_yml_feed.py). -->
+<yml_catalog date="2026-11-07 20:40">
+  <shop>
+    <name>Санаторий ТАЙЦЗИ</name>
+    <company>Санаторий ТАЙЦЗИ (fenix-sanyamed)</company>
+    <url>https://www.fenix-sanyamed.com</url>
+    <platform>fenix-sanyamed.com</platform>
+    <version>1.0</version>
+  </shop>
+  <currencies>
+    <currency id="CNY" rate="1"/>
+  </currencies>
+  <categories>
+    <category id="1">Диагностика и консультация</category>
+    <category id="2">Иглоукалывание и смежные методы</category>
+    <category id="3">Прогревание и прижигание</category>
+    <category id="4">Массаж и мануальная работа</category>
+    <category id="5">Комплексные программы воздействия</category>
+    <category id="6">Косметология и SPA</category>
+    <category id="7">Фитотерапия и лекарственные препараты</category>
+    <category id="8">Прочие процедуры</category>
+  </categories>
+  <offers>
+  <offer id="1" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>50</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>1</categoryId>
+    <name>Пульсовая диагностика</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 15-30мин.</description>
+  </offer>
+  <offer id="2" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>80</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>1</categoryId>
+    <name>Пульсовая диагностика</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="3" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Иглотерапия (акупунктура, иглорефлексотерапия)</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30-50 мин.</description>
+  </offer>
+  <offer id="4" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>220</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Аккупунктурный (иглотерапия) лифтинг лица</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30 мин.</description>
+  </offer>
+  <offer id="5" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Иглотерапия для снижения веса</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30 мин.</description>
+  </offer>
+  <offer id="6" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>500</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Иглонож</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="7" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>1500</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Имплантация кетгута</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="8" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Электроаппарат</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30 мин.</description>
+  </offer>
+  <offer id="9" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Травяное глинолечение с прогреванием</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30 мин.</description>
+  </offer>
+  <offer id="10" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Травяная инъекция</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="11" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>240</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Иглотерапия (акупунктура, иглорефлексотерапия)</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30-50 мин.</description>
+  </offer>
+  <offer id="12" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>280</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Аккупунктурный (иглотерапия) лифтинг лица</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30 мин.</description>
+  </offer>
+  <offer id="13" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>240</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Иглотерапия для снижения веса</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30 мин.</description>
+  </offer>
+  <offer id="14" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>240</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Травяное глинолечение с прогреванием</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30 мин.</description>
+  </offer>
+  <offer id="15" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>100</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Электроаппарат</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30-50 мин.</description>
+  </offer>
+  <offer id="16" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Акупунктура (иглотерапия)</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30-50 мин.</description>
+  </offer>
+  <offer id="17" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Иглотерапия для снижения веса</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30-50 мин.</description>
+  </offer>
+  <offer id="18" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>150</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Травяная инъекция</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="19" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>220</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>2</categoryId>
+    <name>Акупунктурный лифтинг лица</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="20" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>100</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Прогревание с помощью инфракрасных лучей</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30мин.</description>
+  </offer>
+  <offer id="21" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>190</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Прижигание (прогревание) полынными сигарами</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30мин.</description>
+  </offer>
+  <offer id="22" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Прижигание глиной (на основе целебных лекарственных препаратов китайской традиционной медицины)</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 10-20мин.</description>
+  </offer>
+  <offer id="23" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>680</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Моксотерапия «Кость Дракона Фу Ян»</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 90-120мин.</description>
+  </offer>
+  <offer id="24" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Фуянгуан</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30мин.</description>
+  </offer>
+  <offer id="25" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Прижигание моксом</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30мин.</description>
+  </offer>
+  <offer id="26" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Фумигационный аппарат китайской народной медицины</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30мин.</description>
+  </offer>
+  <offer id="27" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Прогревание фуянгуан</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30 мин.</description>
+  </offer>
+  <offer id="28" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>120</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Моксотерапия активных точек организма -</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20 мин.</description>
+  </offer>
+  <offer id="29" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>150</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Моксотерапия по части организма -</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30мин.</description>
+  </offer>
+  <offer id="30" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>150</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Прогревание с помощью инфракрасных лучей</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30мин.</description>
+  </offer>
+  <offer id="31" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>240</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Прижигание (прогревание) полынными сигарами</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30мин.</description>
+  </offer>
+  <offer id="32" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>240</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Прижигание глиной (на основе целебных лекарственных препаратов китайской традиционной медицины)</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 10-20мин.</description>
+  </offer>
+  <offer id="33" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>700</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Моксотерапия «Кость Дракона Фу Ян»</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 90-120мин.</description>
+  </offer>
+  <offer id="34" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>220</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Фуянгуан</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30мин.</description>
+  </offer>
+  <offer id="35" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>220</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Прижигание моксом</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30мин.</description>
+  </offer>
+  <offer id="36" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>220</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Фумигационный аппарат китайской народной медицины</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30мин.</description>
+  </offer>
+  <offer id="37" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>220</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Прогревание фуянгуан</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30 мин.</description>
+  </offer>
+  <offer id="38" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Моксотерапия активных точек организма -</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20 мин.</description>
+  </offer>
+  <offer id="39" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Моксотерапия по части организма -</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30мин.</description>
+  </offer>
+  <offer id="40" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>90</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Прижигание (прогревание) полынными сигарами</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30 мин.</description>
+  </offer>
+  <offer id="41" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>90</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>3</categoryId>
+    <name>Прогревание с помощью инфракрасных лучей</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20 мин.</description>
+  </offer>
+  <offer id="42" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>280</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Лечебный массаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 45 мин.</description>
+  </offer>
+  <offer id="43" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>500</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Вправление костей и коррекция осанки (время сеанса зависит от места заболевания и состояния пациента)</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="44" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>250</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Лимфодренаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30мин.</description>
+  </offer>
+  <offer id="45" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Коррекция осанки у детей</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="46" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>500</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Массаж простаты для мужчин</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 45мин.</description>
+  </offer>
+  <offer id="47" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>500</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Лечебный массаж груди</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 45мин.</description>
+  </offer>
+  <offer id="48" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>50</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Вправление шейного отдела позвоночника</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20мин.</description>
+  </offer>
+  <offer id="49" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>300</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Огненный массаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 45 мин.</description>
+  </offer>
+  <offer id="50" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>280</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Антицеллюлитный комплексный массаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="51" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Массаж точечный и по меридианам всего тела</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="52" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>150</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Травяная ванна и массаж ступней</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="53" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>400</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Арома-массаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="54" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Массаж головы</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30 мин.</description>
+  </offer>
+  <offer id="55" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>450</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Оздоровительный массаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 2 часа.</description>
+  </offer>
+  <offer id="56" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>350</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Лечебный массаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 45 мин.</description>
+  </offer>
+  <offer id="57" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>320</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Лимфодренаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30мин.</description>
+  </offer>
+  <offer id="58" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>300</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Коррекция осанки у детей</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="59" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>550</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Массаж простаты для мужчин</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 45мин.</description>
+  </offer>
+  <offer id="60" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>550</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Лечебный массаж груди</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 45мин.</description>
+  </offer>
+  <offer id="61" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>100</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Вправление шейного отдела позвоночника</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20мин.</description>
+  </offer>
+  <offer id="62" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>340</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Огненный массаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 45 мин.</description>
+  </offer>
+  <offer id="63" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>350</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Антицеллюлитный комплексный массаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="64" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>300</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Массаж точечный и по меридианам всего тела</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="65" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>350</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Травяная ванна и массаж ступней</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="66" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>500</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Арома-массаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="67" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>300</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Массаж головы</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30 мин.</description>
+  </offer>
+  <offer id="68" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>550</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Оздоровительный массаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 2 часа.</description>
+  </offer>
+  <offer id="69" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>140</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Массаж точечный и по меридианам всего тела</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="70" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>100</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Массаж головы</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20мин.</description>
+  </offer>
+  <offer id="71" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Лечебный массаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 40 мин.</description>
+  </offer>
+  <offer id="72" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>280</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Огненный массаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30 мин.</description>
+  </offer>
+  <offer id="73" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>130</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Травяная ванна и массаж ступней</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="74" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Скребковый массаж стоп \</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="75" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Массаж ступней рогом сайги</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="76" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>380</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Аромамассаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 70 мин.</description>
+  </offer>
+  <offer id="77" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>380</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Аромамассаж тонизирующий</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 70 мин.</description>
+  </offer>
+  <offer id="78" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>390</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Оздоровительный массаж</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 5 часа.</description>
+  </offer>
+  <offer id="79" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>550</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>4</categoryId>
+    <name>Массаж четырьмя руками: 1. Увлажнение и питание кожи лица + травяная ванна и массаж ступней + 2. Аромамассаж + травяная ванна и массаж ступней +</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 70 мин.</description>
+  </offer>
+  <offer id="80" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>900</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>5</categoryId>
+    <name>Глубокая регуляция внутренних органов и меридиан</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60-80мин.</description>
+  </offer>
+  <offer id="81" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>580</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>5</categoryId>
+    <name>Традиционная терапия Цзун Цинь</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60мин.</description>
+  </offer>
+  <offer id="82" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>580</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>5</categoryId>
+    <name>Послеродовое восстановление</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 90мин.</description>
+  </offer>
+  <offer id="83" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>500</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>5</categoryId>
+    <name>Защита яичников</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 45мин.</description>
+  </offer>
+  <offer id="84" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>380</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>5</categoryId>
+    <name>Комплексный уход за лицом</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="85" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>620</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>5</categoryId>
+    <name>Послеродовое восстановление</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 90мин.</description>
+  </offer>
+  <offer id="86" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>550</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>5</categoryId>
+    <name>Защита яичников</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 45мин.</description>
+  </offer>
+  <offer id="87" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>450</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>5</categoryId>
+    <name>Комплексный уход за лицом</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="88" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>240</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>5</categoryId>
+    <name>Комплексный уход за ногами</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 90 мин.</description>
+  </offer>
+  <offer id="89" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>400</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Водорослевое обертывание «Дары Моря»</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="90" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>400</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Очищающая процедура с использованием ушных арома-свеч</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="91" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>650</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Арома и стопы</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 5 часа.</description>
+  </offer>
+  <offer id="92" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>880</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Арома и лицо</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 5 часа.</description>
+  </offer>
+  <offer id="93" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>1100</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Spa-комплекс для мужчин «Царские Грезы»</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 3 часа.</description>
+  </offer>
+  <offer id="94" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>1100</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Spa-комплекс для женщин «Услада Царицы»</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 3 часа.</description>
+  </offer>
+  <offer id="95" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>500</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Водорослевое обертывание «Дары Моря»</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="96" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>500</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Очищающая процедура с использованием ушных арома-свеч</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="97" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>750</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Арома и стопы</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 5 часа.</description>
+  </offer>
+  <offer id="98" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>980</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Арома и лицо</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 5 часа.</description>
+  </offer>
+  <offer id="99" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>1300</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Spa-комплекс для мужчин «Царские Грезы»</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 3 часа.</description>
+  </offer>
+  <offer id="100" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>1300</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Spa-комплекс для женщин «Услада Царицы»</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 3 часа.</description>
+  </offer>
+  <offer id="101" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Лифтинг век и губ</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 40 мин.</description>
+  </offer>
+  <offer id="102" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>380</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Фруктовое обертывание «Тропическое наслаждение»</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 70 мин.</description>
+  </offer>
+  <offer id="103" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>380</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Водорослевое обертывание «Дары моря»</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 70 мин.</description>
+  </offer>
+  <offer id="104" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>380</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Очищающая процедура с использованием ушных арома-свеч</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 70 мин.</description>
+  </offer>
+  <offer id="105" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>480</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Ароматерапия</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 5 часа.</description>
+  </offer>
+  <offer id="106" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>660</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>6</categoryId>
+    <name>Арома и стопы</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 5 часа.</description>
+  </offer>
+  <offer id="107" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>480</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>7</categoryId>
+    <name>Нанесение лекарственных препаратов китайской традиционной медицины + лечебные согревающие компрессы +</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60мин.</description>
+  </offer>
+  <offer id="108" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>520</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>7</categoryId>
+    <name>Нанесение лекарственных препаратов китайской традиционной медицины + лечебные согревающие компрессы +</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60мин.</description>
+  </offer>
+  <offer id="109" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Китайские банки с кровопусканием</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="110" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>380</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Профессиональное лечение (лечебные масла)</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 45мин.</description>
+  </offer>
+  <offer id="111" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Поддержание здоровья при помощи восстановления циркуляции энергии Ци</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30мин.</description>
+  </offer>
+  <offer id="112" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Таргетная терапия китайской традиционной медицины</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20 мин.</description>
+  </offer>
+  <offer id="113" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>«Вивафан»</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30 мин.</description>
+  </offer>
+  <offer id="114" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>150</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Методика ударно-волновой терапии</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="115" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>150</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Восстановление волос лечебными травами китайской традиционной медицины</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 45-60 мин.</description>
+  </offer>
+  <offer id="116" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Китайский педикюр</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30 мин.</description>
+  </offer>
+  <offer id="117" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>90</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Скобление «Гуаша»</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 15-20 мин.</description>
+  </offer>
+  <offer id="118" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>380</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Биоуход за лицом</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="119" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>400</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Скраб морской солью</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="120" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>400</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Терапия после солнечного ожога</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="121" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>550</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Восстановление равновесия пяти стихий всего организма</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 5 часа.</description>
+  </offer>
+  <offer id="122" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Электроиглоукалывание</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30 мин.</description>
+  </offer>
+  <offer id="123" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>300</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Китайские банки с кровопусканием</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="124" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>480</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Профессиональное лечение (лечебные масла)</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 45мин.</description>
+  </offer>
+  <offer id="125" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>220</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Поддержание здоровья при помощи восстановления циркуляции энергии Ци</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30мин.</description>
+  </offer>
+  <offer id="126" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>220</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Таргетная терапия китайской традиционной медицины</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20 мин.</description>
+  </offer>
+  <offer id="127" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>260</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>«Вивафан»</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30 мин.</description>
+  </offer>
+  <offer id="128" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Методика ударно-волновой терапии</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="129" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>200</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Восстановление волос лечебными травами китайской традиционной медицины</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 45-60 мин.</description>
+  </offer>
+  <offer id="130" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>280</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Китайский педикюр</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30 мин.</description>
+  </offer>
+  <offer id="131" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>150</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Скобление «Гуаша»</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 15-20 мин.</description>
+  </offer>
+  <offer id="132" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>150</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Вакуум -терапия</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 15-20 мин.</description>
+  </offer>
+  <offer id="133" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>450</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Биоуход за лицом</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="134" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>500</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Скраб морской солью</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="135" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>500</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Терапия после солнечного ожога</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 60 мин.</description>
+  </offer>
+  <offer id="136" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>650</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Восстановление равновесия пяти стихий всего организма</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 5 часа.</description>
+  </offer>
+  <offer id="137" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>190</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Ванна с целебными травами</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30 мин.</description>
+  </offer>
+  <offer id="138" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>100</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Аурикулотерапия ушными кнопками</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="139" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>120</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Аурикулотерапия традиционными иглами</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan.</description>
+  </offer>
+  <offer id="140" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>90</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Вакуум-терапия</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30 мин.</description>
+  </offer>
+  <offer id="141" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>150</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Китайский педикюр</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30 мин.</description>
+  </offer>
+  <offer id="142" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>280</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Комплекс для ног с имбирем</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 90 мин.</description>
+  </offer>
+  <offer id="143" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>180</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Восстановление кожи шеи</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30 мин.</description>
+  </offer>
+  <offer id="144" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>280</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Восстановление кожи рук</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 70 мин.</description>
+  </offer>
+  <offer id="145" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>280</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Увлажнение и питание кожи лица</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 70 мин.</description>
+  </offer>
+  <offer id="146" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>150</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Мини-комплекс для лица с применением аппарата</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 30 мин.</description>
+  </offer>
+  <offer id="147" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>100</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Капсула-релакс с душем</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30 мин.</description>
+  </offer>
+  <offer id="148" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>150</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Цветочная ванна</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30 мин.</description>
+  </offer>
+  <offer id="149" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>150</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Ванна с зеленым чаем и лаймом</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30 мин.</description>
+  </offer>
+  <offer id="150" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>150</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Ванна с кокосовым молоком</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 20-30 мин.</description>
+  </offer>
+  <offer id="151" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>380</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Скраб</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 70 мин.</description>
+  </offer>
+  <offer id="152" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>380</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Скраб морской солью</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 70 мин.</description>
+  </offer>
+  <offer id="153" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>380</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Терапия после солнечного ожога</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 70 мин.</description>
+  </offer>
+  <offer id="154" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>380</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Стоун-терапия</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 70 мин.</description>
+  </offer>
+  <offer id="155" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>1100</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Царские грезы</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 3 часа.</description>
+  </offer>
+  <offer id="156" available="true">
+    <url>https://www.fenix-sanyamed.com/czeny/</url>
+    <price>1100</price>
+    <currencyId>CNY</currencyId>
+    <categoryId>8</categoryId>
+    <name>Услада царицы</name>
+    <description>Procedure of traditional Chinese medicine at TAIJI Sanatorium, Sanya, Hainan. Session duration: 3 часа.</description>
+  </offer>
+  </offers>
+</yml_catalog>

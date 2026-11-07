@@ -65,7 +65,7 @@ export const VRACHI: Vrach[] = [
     ],
     cabLocation: {
       bukhta: "Дадунхай",
-      hotel: "Медицинский центр Феникс",
+      hotel: "Медицинский центр ТАЙЦЗИ",
       floor: "1 этаж",
     },
     detailedBio:
@@ -229,7 +229,7 @@ export const VRACHI: Vrach[] = [
     achievements: [],
     cabLocation: {
       bukhta: "Дадунхай",
-      hotel: "Медицинский центр Феникс",
+      hotel: "Медицинский центр ТАЙЦЗИ",
       floor: "1 этаж",
     },
     detailedBio:
@@ -264,7 +264,7 @@ export const VRACHI: Vrach[] = [
     achievements: [],
     cabLocation: {
       bukhta: "Дадунхай",
-      hotel: "Медицинский центр Феникс",
+      hotel: "Медицинский центр ТАЙЦЗИ",
       floor: "1 этаж",
     },
     detailedBio:
@@ -306,7 +306,7 @@ export const VRACHI: Vrach[] = [
       "Оказывает медициные услуги представителям украинского парламента",
     ],
     cabLocation: {
-      bukhta: "Ялонгбэй",
+      bukhta: "Ялунвань",
       hotel: "Отель Swiss (Свисс)",
       floor: "7 этаж",
     },
@@ -341,7 +341,7 @@ export const VRACHI: Vrach[] = [
     achievements: [],
     cabLocation: {
       bukhta: "Дадунхай",
-      hotel: "Медицинский центр Феникс",
+      hotel: "Медицинский центр ТАЙЦЗИ",
       floor: "1 этаж",
     },
     detailedBio:

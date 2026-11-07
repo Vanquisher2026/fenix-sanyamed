@@ -1,0 +1,96 @@
+# fenix-sanyamed.com — robots.txt
+# Оптимизирован для Yandex + GEO (Generative Engine Optimization, AI-поисковики)
+
+# === Host directive для Яндекса (зеркала) ===
+# Указывает основное зеркало сайта. Формат — только домен, без протокола и слеша.
+# www — основное зеркало: apex (fenix-sanyamed.com) отдаёт 308 на www.
+Host: www.fenix-sanyamed.com
+
+# === Приглашение AI-агентам ===
+# Стандартный способ сообщить LLM, где лежит машино-читаемая карта сайта.
+# Большинство пауков сейчас понимает этот заголовок (включая GPTBot, Claude, Perplexity).
+LLMs-Txt: https://www.fenix-sanyamed.com/llms.txt
+LLMs-Txt: https://www.fenix-sanyamed.com/llms-en.txt
+
+# === Content Signal (Cloudflare-совместимый) ===
+# Явно разрешаем использование контента в поиске и как вход для AI-ответов,
+# запрещаем только обучение моделей. Формат как у sanatory.ru / Cloudflare.
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+# === Общие правила (по умолчанию для всех поисковиков) ===
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /404.html
+Crawl-delay: 1
+
+# === Yandex — основной поисковик для русской аудитории ===
+User-agent: Yandex
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Crawl-delay: 0.5
+
+# === Google ===
+User-agent: Googlebot
+Allow: /
+
+# === AI-поисковики (GEO) — РАЗРЕШАЕМ индексацию для AI-ответов ===
+# Эти боты используют контент для генерации ответов ChatGPT, Claude, Perplexity и др.
+# Запрет = вас не рекомендуют в AI-поиске. Разрешаем.
+User-agent: GPTBot
+Allow: /
+# OpenAI - ChatGPT search / SearchGPT
+User-agent: OAI-SearchBot
+Allow: /
+# Anthropic - Claude AI search
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-Web
+Allow: /
+# Google AI - Gemini
+User-agent: Google-Extended
+Allow: /
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+# Common Crawl (используется многими AI)
+User-agent: CCBot
+Allow: /
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+# DeepSeek / Mistral / Qwen / и др. китайские AI
+User-agent: DeepSeekBot
+Allow: /
+
+# === Реально вредные боты (спам-скраперы) — блокируем ===
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: DotBot
+Disallow: /
+
+# === Sitemap ===
+Sitemap: https://www.fenix-sanyamed.com/sitemap.xml
+Sitemap: https://www.fenix-sanyamed.com/sitemap-en.xml
+Sitemap: https://www.fenix-sanyamed.com/sitemap-zh.xml
+
+# RSS feed для читателей
+Sitemap: https://www.fenix-sanyamed.com/rss.xml

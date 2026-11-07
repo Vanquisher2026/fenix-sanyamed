@@ -2,6 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { VRACHI, getVrachBySlug } from "@/data/vrachi";
+import { getVrachSeo } from "@/data/seo/vrachi.seo";
+import { PROGRAMMY } from "@/data/programmy";
+import SmartImage from "@/components/SmartImage";
+
+/** Название программы по slug — для перелинковки «врач ↔ программа» */
+function programTitle(slug: string): string {
+  return PROGRAMMY.find((p) => p.slug === slug)?.title ?? slug;
+}
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -26,10 +34,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!v) return { title: "Врач не найден" };
 
   return {
-    title: `${v.nameRu} — врач китайской медицины | fenix-sanyamed`,
-    description: `${v.position}. Опыт ${v.experienceYears} лет. Специализация: ${v.specialization.slice(0, 5).join(", ")}.`,
+    title:
+      v.slug === "chzhan-li-in"
+        ? "Чжан Ли Ин — врач ТКМ, опыт 43 лет"
+        : `${v.nameRu} — ${v.specialization[0]}, опыт ${v.experienceYears} лет`,
+    description: `${v.nameRu} — ${v.position.toLowerCase()}, опыт ${v.experienceYears} лет. Специализация: ${v.specialization.slice(0, 4).join(", ")}.`,
     alternates: {
-      canonical: `https://fenix-sanyamed.com/vrachi/${v.slug}/`,
+      canonical: `https://www.fenix-sanyamed.com/vrachi/${v.slug}/`,
+      languages: {
+        ru: `https://www.fenix-sanyamed.com/vrachi/${v.slug}/`,
+        "x-default": `https://www.fenix-sanyamed.com/vrachi/${v.slug}/`,
+        en: `https://www.fenix-sanyamed.com/en/vrachi/${v.slug}/`,
+      },
     },
   };
 }
@@ -49,7 +65,7 @@ const vrachSchema = (v: NonNullable<ReturnType<typeof getVrachBySlug>>) => ({
   })),
   worksFor: {
     "@type": "MedicalClinic",
-    "@id": "https://fenix-sanyamed.com/#clinic",
+    "@id": "https://www.fenix-sanyamed.com/#clinic",
     name: "Медицинский центр fenix-sanyamed",
   },
 });
@@ -60,13 +76,33 @@ export default async function VrachPage({ params }: Props) {
   if (!v) notFound();
 
   const photo = DOCTOR_PHOTOS[v.slug];
+  const seo = getVrachSeo(slug);
+
+  const faqSchema =
+    seo && seo.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: seo.faq.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
 
   return (
-    <main className="mx-auto max-w-5xl px-6 py-12">
+    <main id="main" className="mx-auto max-w-5xl px-6 py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(vrachSchema(v)) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       <nav className="mb-8 text-sm text-zinc-600">
         <Link href="/" className="hover:underline">
@@ -84,10 +120,11 @@ export default async function VrachPage({ params }: Props) {
       <section className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-3">
         <div className="md:col-span-1">
           {photo ? (
-            /* eslint-disable-next-line @next/next/no-img-element */
-            <img
+            <SmartImage
               src={photo}
               alt={`${v.nameRu} (${v.nameCn}) — врач традиционной китайской медицины в санатории fenix-sanyamed, Санья, Хайнань`}
+              width={400}
+              height={400}
               className="aspect-square w-full rounded-3xl object-cover"
             />
           ) : (
@@ -145,7 +182,7 @@ export default async function VrachPage({ params }: Props) {
 
       <section className="mb-10">
         <h2 className="mb-4 text-2xl font-bold">Специализация</h2>
-        <div className="flex flex-wrap gap-2">
+        <div className="mb-6 flex flex-wrap gap-2">
           {v.specialization.map((s) => (
             <span
               key={s}
@@ -155,7 +192,93 @@ export default async function VrachPage({ params }: Props) {
             </span>
           ))}
         </div>
+
+        {seo && seo.focusAreas.length > 0 && (
+          <ul className="space-y-5">
+            {seo.focusAreas.map((f) => (
+              <li key={f.title} className="rounded-2xl bg-[var(--surface)] p-5">
+                <h3 className="mb-2 text-lg font-semibold text-zinc-900">
+                  {f.title}
+                </h3>
+                <p className="text-base leading-relaxed text-zinc-700">
+                  {f.detail}
+                </p>
+              </li>
+            ))}
+          </ul>
+        )}
       </section>
+
+      {/* === МЕЖДУНАРОДНЫЙ ОПЫТ === */}
+      {v.internationalExperience && (
+        <section className="mb-10">
+          <h2 className="mb-4 text-2xl font-bold">Международный опыт</h2>
+          <p className="text-base leading-relaxed text-zinc-700">
+            {v.internationalExperience}
+          </p>
+        </section>
+      )}
+
+      {/* === ПРИЁМ И КОНСУЛЬТАЦИЯ === */}
+      {seo && (
+        <section className="mb-10 rounded-3xl bg-[var(--surface)] p-8">
+          <h2 className="mb-4 text-2xl font-bold">Приём и консультация</h2>
+          <p className="text-base leading-relaxed text-zinc-700">
+            {seo.consultation}
+          </p>
+          {seo.relatedPrograms.length > 0 && (
+            <div className="mt-5 border-t border-zinc-200 pt-5">
+              <p className="mb-3 text-sm font-semibold text-zinc-700">
+                Программы, в которых участвует этот врач:
+              </p>
+              <ul className="flex flex-wrap gap-2">
+                {seo.relatedPrograms.map((slug) => (
+                  <li key={slug}>
+                    <Link
+                      href={`/programmy/${slug}/`}
+                      className="inline-block rounded-full border border-emerald-300 px-4 py-1.5 text-sm text-emerald-800 hover:bg-emerald-50"
+                    >
+                      {programTitle(slug)}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </section>
+      )}
+
+      {/* === ПРОФЕССИОНАЛЬНЫЙ ПУТЬ === */}
+      {seo && (
+        <section className="mb-10">
+          <h2 className="mb-4 text-2xl font-bold">Профессиональный путь</h2>
+          <p className="text-base leading-relaxed text-zinc-700">
+            {seo.career}
+          </p>
+        </section>
+      )}
+
+      {/* === ЧАСТЫЕ ВОПРОСЫ === */}
+      {seo && seo.faq.length > 0 && (
+        <section className="mb-10">
+          <h2 className="mb-4 text-2xl font-bold">Частые вопросы</h2>
+          <div className="space-y-3">
+            {seo.faq.map((f) => (
+              <details
+                key={f.q}
+                className="rounded-2xl bg-[var(--surface)] p-5"
+              >
+                <summary className="cursor-pointer font-semibold text-zinc-900">
+                  {f.q}
+                </summary>
+                <p className="mt-3 text-base leading-relaxed text-zinc-700">
+                  {f.a}
+                </p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="mb-10 rounded-3xl bg-[var(--surface)] p-8">
         <h2 className="mb-3 text-xl font-bold">📍 Кабинет врача</h2>

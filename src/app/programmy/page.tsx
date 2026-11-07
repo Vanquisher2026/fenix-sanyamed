@@ -3,17 +3,22 @@ import Link from "next/link";
 import { PROGRAMMY } from "@/data/programmy";
 
 export const metadata: Metadata = {
-  title: "Программы лечения | Медицинский центр fenix-sanyamed",
+  title: "Программы лечения ТКМ в Санья — 10 направлений санатория ТАЙЦЗИ",
   description:
-    "Десять лечебных программ традиционной китайской медицины в Санья: нормализация работы органов, опорно-двигательный аппарат, женское здоровье, антистресс, снижение веса и др.",
+    "Десять лечебных программ ТКМ в Санья традиционной китайской медицины в Санья: нормализация работы органов, опорно-двигательный аппарат, женское здоровье, антистресс, снижение веса и др.",
   alternates: {
-    canonical: "https://fenix-sanyamed.com/programmy/",
+    canonical: "https://www.fenix-sanyamed.com/programmy/",
+    languages: {
+      ru: "https://www.fenix-sanyamed.com/programmy/",
+      "x-default": "https://www.fenix-sanyamed.com/programmy/",
+      en: "https://www.fenix-sanyamed.com/en/programmy/",
+    },
   },
 };
 
 export default function ProgrammyPage() {
   return (
-    <main className="px-6 py-20">
+    <main id="main" className="px-6 py-20">
       {/* === HEADER === */}
       <section className="mx-auto max-w-4xl text-center">
         <p className="hero-eyebrow mb-6">
@@ -21,7 +26,7 @@ export default function ProgrammyPage() {
           Программы
           <span className="gold-line" />
         </p>
-        <h1 className="mb-6">Десять лечебных программ</h1>
+        <h1 className="mb-6">Десять лечебных программ ТКМ в Санья</h1>
         <span className="gold-line mx-auto my-6 block" />
         <p className="font-serif text-lg italic text-zinc-600">
           Каждая программа подбирается индивидуально на основании пульсовой

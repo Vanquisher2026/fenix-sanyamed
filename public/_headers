@@ -1,0 +1,58 @@
+# _headers для Cloudflare Pages
+# ВАЖНО: Cloudflare Pages объединяет эти правила с встроенными.
+
+# === Robots / Sitemap / GEO / llms.txt — 1 час, можно долго ===
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/sitemap-zh.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/geo.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+/site.webmanifest
+  Content-Type: application/manifest+json; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+# === Изображения (WebP + JPEG) — 30 дней, immutable ===
+# Кэш браузера: год (immutable). CDN: 30 дней.
+/images/*
+  Cache-Control: public, max-age=2592000, immutable
+
+# === og-image, favicon, manifest — 30 дней ===
+/og-image.jpg
+  Cache-Control: public, max-age=2592000, immutable
+
+/favicon.ico
+  Cache-Control: public, max-age=2592000, immutable
+
+# === Документы (docs/) — 1 день, может обновляться ===
+/docs/*
+  Cache-Control: public, max-age=86400
+
+# === RSS ===
+/rss.xml
+  Content-Type: application/rss+xml; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+# === HTML страницы — 1 час на edge (статичный сайт, редко меняется) ===
+# Более специфичные правила (/images/*, /rss.xml и т.д.) имеют приоритет.
+/*
+  Cache-Control: public, max-age=3600
+
+# YML feed for Yandex Business/Webmaster must be served as XML
+/price-list.yml
+  Content-Type: application/xml; charset=utf-8

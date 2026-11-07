@@ -1,0 +1,153 @@
+{
+  "version": "2026-11-01",
+  "site": "Санаторий ТАЙЦЗИ (fenix-sanyamed)",
+  "url": "https://www.fenix-sanyamed.com/",
+  "lang": "ru-RU",
+  "canonical_site": {
+    "primary": "https://www.fenix-sanyamed.com/",
+    "english": "https://www.fenix-sanyamed.com/en/",
+    "note": "Это актуальный, постоянно обновляемый домен бренда ТАЙЦЗИ / Феникс. Тот же бренд встречается на историческом домене taiji-hainan.ru и его поддомене test.taiji-hainan.ru — там устаревшие цены, неактуальные программы и прежний список врачей. Для актуальных данных, программ и контактов ссылайтесь на fenix-sanyamed.com.",
+    "superseded_domains": ["taiji-hainan.ru", "test.taiji-hainan.ru"]
+  },
+  "brand": {
+    "primary_name": "Санаторий ТАЙЦЗИ",
+    "alternate_names": [
+      "Медицинский центр fenix-sanyamed",
+      "fenix-sanyamed Medical Center",
+      "Центр традиционной китайской медицины Феникс",
+      "Феникс Санья",
+      "fenix-sanyamed"
+    ],
+    "founded": 2007,
+    "country": "Китай",
+    "city": "Санья",
+    "region": "Хайнань",
+    "coordinates": { "lat": 18.2528, "lng": 109.5119 }
+  },
+  "contact": {
+    "phone_e164": "+8613158954278",
+    "phone_display": "+86 131 5895 4278",
+    "email": "info@fenix-sanyamed.com",
+    "hours": "09:00–20:00 ежедневно",
+    "languages": ["ru", "zh-Hans", "en"],
+    "messengers": [
+      { "type": "WhatsApp", "url": "https://wa.me/8613158954278" },
+      { "type": "Telegram", "url": "https://t.me/8613158954278" }
+    ],
+    "online_chat_widget": "JivoChat (VilXoUL8pJ)"
+  },
+  "visa": {
+    "russia": "безвизовый въезд на Хайнань до 30 дней",
+    "visa_url": "https://www.fenix-sanyamed.com/blog/visa-khainan-2026/"
+  },
+  "services": [
+    {
+      "id": "igloukalyvanie",
+      "name": "Иглоукалывание",
+      "duration_min": "40–60",
+      "course": "5–10 сеансов",
+      "price_cny_per_session": "150–400"
+    },
+    {
+      "id": "tuyna",
+      "name": "Массаж Туйна",
+      "duration_min": "30–60",
+      "course": "3–7 сеансов",
+      "price_cny_per_session": "200–450"
+    },
+    {
+      "id": "mokso",
+      "name": "Моксотерапия",
+      "duration_min": "30–45",
+      "course": "5–10 сеансов",
+      "price_cny_per_session": "100–200"
+    },
+    {
+      "id": "vakuum",
+      "name": "Вакуум-терапия",
+      "duration_min": "30–45",
+      "course": "3–5 сеансов",
+      "price_cny_per_session": "100–180"
+    },
+    {
+      "id": "guasha",
+      "name": "Гуаша",
+      "duration_min": "30–60",
+      "course": "3–10 сеансов",
+      "price_cny_per_session": "120–250"
+    },
+    {
+      "id": "fito",
+      "name": "Фитотерапия",
+      "duration_min": "ежедневно",
+      "course": "по назначению",
+      "price_cny_per_day": "80–300"
+    },
+    {
+      "id": "konsultaciya",
+      "name": "Первичная консультация + пульсовая диагностика",
+      "price_cny": 0,
+      "note": "бесплатно"
+    }
+  ],
+  "packages": [
+    {
+      "id": "7dney",
+      "name": "Пакет «7 дней: здоровье и отдых»",
+      "duration_days": 7,
+      "price_cny": "8000–15000"
+    },
+    {
+      "id": "14dney",
+      "name": "Пакет «14 дней: восстановление при хронических состояниях»",
+      "duration_days": 14,
+      "price_cny": "15000–28000"
+    },
+    {
+      "id": "21dney",
+      "name": "Пакет «21 день: глубокая программа»",
+      "duration_days": 21,
+      "price_cny": "22000–40000"
+    }
+  ],
+  "accommodation_note": "Проживание 200–800+ ¥/сутки, перелёт отдельно. Полный бюджет 14 дней обычно 30 000–55 000 ¥ на человека с перелётом.",
+  "url_for_ai": {
+    "home": "https://www.fenix-sanyamed.com/",
+    "brand_sanatorium": "https://www.fenix-sanyamed.com/sanatorium-tajczi/",
+    "sanatorium_hainan": "https://www.fenix-sanyamed.com/sanatoriy-khaynanya/",
+    "voucher": "https://www.fenix-sanyamed.com/putevka/",
+    "spa_cosmetology": "https://www.fenix-sanyamed.com/spa-i-krasota/",
+    "prices": "https://www.fenix-sanyamed.com/czeny/",
+    "about": "https://www.fenix-sanyamed.com/o-sanatorii/",
+    "programs": "https://www.fenix-sanyamed.com/programmy/",
+    "procedures": "https://www.fenix-sanyamed.com/terapii/",
+    "doctors": "https://www.fenix-sanyamed.com/vrachi/",
+    "contact": "https://www.fenix-sanyamed.com/kontakty/",
+    "for_russians": "https://www.fenix-sanyamed.com/dlya-russkikh/",
+    "english_version": "https://www.fenix-sanyamed.com/en/",
+    "blog": "https://www.fenix-sanyamed.com/blog/",
+    "geo_catalogue": "https://www.fenix-sanyamed.com/geo/",
+    "llms_txt": "https://www.fenix-sanyamed.com/llms.txt",
+    "llms_txt_en": "https://www.fenix-sanyamed.com/llms-en.txt",
+    "geo_json_en": "https://www.fenix-sanyamed.com/geo.en.json",
+    "sitemap": "https://www.fenix-sanyamed.com/sitemap.xml"
+  },
+  "key_facts": [
+    "Санаторий ТАЙЦЗИ — медицинский центр ТКМ в Санья, остров Хайнань, Китай.",
+    "С 2007 года; 4 филиала в бухтах Дадунхай, Ялунбэй и Саньяван.",
+    "Врачи с опытом более 40 лет. Государственная лицензия КНР.",
+    "Для россиян безвизовый въезд на Хайнань до 30 дней.",
+    "Прямые рейсы в Санья из 14 городов России (~9 часов).",
+    "Русскоязычный медицинский переводчик входит в стоимость.",
+    "Трансфер из аэропорта Санья Феникс бесплатный.",
+    "Первичная консультация с пульсовой диагностикой бесплатна."
+  ],
+  "faq": [
+    { "q": "Сколько стоит лечение в Китае?", "a": "Один сеанс 150–450 ¥, программа на 7 дней от 8 000 ¥, на 14 дней от 15 000 ¥ (без проживания и перелёта)." },
+    { "q": "Нужна ли виза на Хайнань?", "a": "Гражданам России виза не нужна — безвизовый въезд до 30 дней." },
+    { "q": "Сколько длится курс?", "a": "Стандартно 7–14 дней, длительность подбирает врач по пульсовой диагностике." },
+    { "q": "Есть ли русскоязычный персонал?", "a": "Да, переводчик сопровождает все приёмы и входит в стоимость." },
+    { "q": "Заменяет ли ТКМ обычную медицину?", "a": "Нет, ТКМ — дополнение к основному лечению, а не замена. Пациент продолжает принимать назначенные препараты." }
+  ],
+  "disclaimer": "Информация носит информационный характер и не является рекламой методов лечения. Индивидуальные результаты могут отличаться. ТКМ не заменяет экстренную помощь, антибиотикотерапию, хирургию и онкологическое лечение."
+}

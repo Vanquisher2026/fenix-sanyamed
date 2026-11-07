@@ -2,17 +2,22 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "О медицинском центре | История, лицензии, философия",
+  title: "О санатории ТАЙЦЗИ в Санья — история, лицензии, 4 филиала на Хайнане",
   description:
     "Медицинский центр традиционной китайской медицины в городе Санья. История, философия, государственная лицензия.",
   alternates: {
-    canonical: "https://fenix-sanyamed.com/o-sanatorii/",
+    canonical: "https://www.fenix-sanyamed.com/o-sanatorii/",
+    languages: {
+      ru: "https://www.fenix-sanyamed.com/o-sanatorii/",
+      "x-default": "https://www.fenix-sanyamed.com/o-sanatorii/",
+      en: "https://www.fenix-sanyamed.com/en/o-sanatorii/",
+    },
   },
 };
 
 export default function OSanatoriiPage() {
   return (
-    <main className="px-6 py-20">
+    <main id="main" className="px-6 py-20">
       {/* === HEADER === */}
       <section className="mx-auto max-w-4xl text-center">
         <p className="hero-eyebrow mb-6">
@@ -21,7 +26,7 @@ export default function OSanatoriiPage() {
           <span className="gold-line" />
         </p>
         <h1 className="mb-6">
-          Медицинский центр <em className="italic">fenix-sanyamed</em>
+          О санатории ТАЙЦЗИ в Санья
         </h1>
         <p className="font-serif text-lg italic text-zinc-600">
           Основано в 2007 году в городе Санья, остров Хайнань
@@ -44,7 +49,7 @@ export default function OSanatoriiPage() {
 
           <p className="mb-6 font-serif text-lg leading-relaxed text-zinc-800">
             Наша филиальная сеть работает в четырёх бухтах города Санья —
-            Дадунхай, Ялонгбэй, Саньяван и Саньябэй. Это позволяет гостям
+            Дадунхай, Ялунвань, Саньяван и Саньябэй. Это позволяет гостям
             выбрать наиболее удобную локацию рядом с отелями и пляжами.
           </p>
 
@@ -96,7 +101,7 @@ export default function OSanatoriiPage() {
             <h3 className="mb-3">Четыре филиала в Санья</h3>
             <span className="gold-line mb-3 block" />
             <p className="font-serif leading-relaxed text-zinc-700">
-              Филиалы в бухтах Дадунхай, Ялонгбэй, Саньяван и Саньябэй. Вы
+              Филиалы в бухтах Дадунхай, Ялунвань, Саньяван и Саньябэй. Вы
               можете выбрать локацию, наиболее удобную для вашего проживания.
             </p>
           </div>

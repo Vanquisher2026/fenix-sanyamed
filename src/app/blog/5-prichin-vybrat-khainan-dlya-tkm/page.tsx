@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BilingualContent from "./LanguageSwitcher";
+import { BlogSchema, blogMetadata } from "@/components/BlogSchema";
 
 // ⚠️ SEO: единый URL с двуязычным контентом (русский + английский)
 // Альтернатива: hreflang + отдельные /en/blog/... страницы (когда будет ресурс).
@@ -10,15 +11,30 @@ export const metadata: Metadata = {
     "5 причин выбрать Хайнань для лечения традиционной китайской медициной",
   description:
     "Хайнань — тропический остров в Китае, идеальное место для традиционной китайской медицины. 5000 лет традиции, мягкий климат, доступные цены, русскоязычные клиники.",
-  alternates: {
-    canonical:
-      "https://fenix-sanyamed.com/blog/5-prichin-vybrat-khainan-dlya-tkm/",
-  },
+  ...blogMetadata({
+    title:
+      "5 причин выбрать Хайнань для лечения традиционной китайской медициной",
+    description:
+      "Хайнань — тропический остров в Китае, идеальное место для традиционной китайской медицины. 5000 лет традиции, мягкий климат, доступные цены, русскоязычные клиники.",
+    url: "https://www.fenix-sanyamed.com/blog/5-prichin-vybrat-khainan-dlya-tkm/",
+    datePublished: "2026-09-06",
+    dateModified: "2026-10-17",
+    keywords: [
+      "Хайнань ТКМ",
+      "традиционная китайская медицина",
+      "почему Хайнань",
+    ],
+    languages: {
+      ru: "https://www.fenix-sanyamed.com/blog/5-prichin-vybrat-khainan-dlya-tkm/",
+      "x-default": "https://www.fenix-sanyamed.com/blog/5-prichin-vybrat-khainan-dlya-tkm/",
+      en: "https://www.fenix-sanyamed.com/en/blog/5-prichin-vybrat-khainan-dlya-tkm/",
+    },
+  }),
 };
 
 const content = {
   ru: {
-    title: "5 причин выбрать Хайнань для лечения традиционной китайской медициной",
+    title: "5 причин выбрать Хайнань для лечения ТКМ",
     navHome: "Главная",
     navBlog: "Блог",
     navCurrent: "5 причин выбрать Хайнань",
@@ -95,7 +111,15 @@ const content = {
 
 export default function BlogPost() {
   return (
-    <main className="mx-auto max-w-3xl px-4 py-12">
+    <main id="main" className="mx-auto max-w-3xl px-4 py-12">
+      <BlogSchema
+        title="5 причин выбрать Хайнань для лечения традиционной китайской медициной"
+        description="Хайнань — тропический остров в Китае, идеальное место для традиционной китайской медицины. 5000 лет традиции, мягкий климат, доступные цены, русскоязычные клиники."
+        url="https://www.fenix-sanyamed.com/blog/5-prichin-vybrat-khainan-dlya-tkm/"
+        datePublished="2026-09-06"
+        dateModified="2026-10-17"
+        keywords={["Хайнань ТКМ", "почему Хайнань", "китайская медицина"]}
+      />
       <nav className="mb-8 text-sm text-zinc-600">
         <Link href="/" className="hover:underline">
           Главная

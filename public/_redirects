@@ -1,0 +1,16 @@
+# _redirects для Cloudflare Pages
+# Формат: <исходный URL> <целевой URL> <код> [флаги]
+#
+# Зачем: apex (fenix-sanyamed.com) отдавал 200 с тем же контентом, что и www,
+# при этом canonical/robots Host указывают на www. Яндекс видел два дубля
+# одного сайта и не индексировал страницы («Searchable pages = 0»).
+# Редирект 301 apex → www убирает дубль и концентрирует вес.
+
+# === 1. www → apex нет! Основной хост = www (его объявляют canonical и robots Host) ===
+
+# === 2. http → https для обоих хостов ===
+http://fenix-sanyamed.com/*   https://www.fenix-sanyamed.com/:splat  301
+http://www.fenix-sanyamed.com/* https://www.fenix-sanyamed.com/:splat 301
+
+# === 3. apex → www (301, сохраняя путь и query) ===
+https://fenix-sanyamed.com/*  https://www.fenix-sanyamed.com/:splat  301

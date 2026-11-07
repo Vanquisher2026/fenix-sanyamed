@@ -1,0 +1,308 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import {
+  TEL_URL,
+  PHONE_DISPLAY,
+  CLINIC_EMAIL,
+  MESSENGERS,
+} from "@/data/contacts";
+import { LOCATIONS } from "@/data/locations";
+import { VRACHI } from "@/data/vrachi";
+import ContactForm from "@/components/ContactForm";
+
+// Телефон и мессенджеры — реальные (обновлено 2026-10-16).
+// Точные координаты филиалов — TBD.
+
+export const metadata: Metadata = {
+  title: "Контакты и запись на приём",
+  description:
+    "Контакты медицинского центра традиционной китайской медицины в городе Санья: адреса четырёх филиалов, телефон и WhatsApp, Telegram, почта, схема проезда от аэропорта и порядок записи на приём.",
+  alternates: {
+    canonical: "https://www.fenix-sanyamed.com/kontakty/",
+  },
+};
+
+export default function KontaktyPage() {
+  return (
+    <main id="main" className="px-6 py-20">
+      {/* === HEADER === */}
+      <section className="mx-auto max-w-4xl text-center">
+        <p className="hero-eyebrow mb-6">
+          <span className="gold-line" />
+          Контакты
+          <span className="gold-line" />
+        </p>
+        <h1 className="mb-6">Связаться с нами</h1>
+        <p className="font-serif text-lg italic text-zinc-600">
+          Русскоязычный координатор на связи. Подберём индивидуальную
+          программу и ответим на все вопросы.
+        </p>
+      </section>
+
+      <div className="mx-auto my-16 max-w-md">
+        <div className="divider-double" />
+      </div>
+
+      {/* === КОНТАКТНЫЕ КАРТОЧКИ === */}
+      <section className="mx-auto max-w-5xl">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          {/* Адрес */}
+          <div className="card-luxury">
+            <p className="hero-eyebrow mb-3 text-[var(--secondary-dark)]">
+              Адрес
+            </p>
+            <h3 className="mb-4">Санаторий ТАЙЦЗИ</h3>
+            <span className="gold-line mb-4 block" />
+            <p className="mb-1 font-serif text-zinc-700">
+              бухты Дадунхай, Ялонгбэй и Саньяван
+            </p>
+            <p className="font-serif text-zinc-700">
+              город Санья, остров Хайнань, Китай
+            </p>
+            <p className="mt-2 font-ui text-xs uppercase tracking-luxury text-zinc-500">
+              572000 · Китай
+            </p>
+          </div>
+
+          {/* Телефон */}
+          <div className="card-luxury">
+            <p className="hero-eyebrow mb-3 text-[var(--secondary-dark)]">
+              Телефон
+            </p>
+            <h3 className="mb-4">Свяжитесь напрямую</h3>
+            <span className="gold-line mb-4 block" />
+            <p className="mb-2 font-serif text-zinc-700">
+              <a
+                href={TEL_URL}
+                className="font-display text-lg hover:text-[var(--primary)]"
+              >
+                <strong>{PHONE_DISPLAY}</strong>
+              </a>
+            </p>
+            <p className="font-serif text-sm italic text-zinc-600">
+              WhatsApp, Telegram и Instagram — по этому номеру
+            </p>
+          </div>
+
+          {/* Email */}
+          <div className="card-luxury">
+            <p className="hero-eyebrow mb-3 text-[var(--secondary-dark)]">
+              Email
+            </p>
+            <h3 className="mb-4">Напишите нам</h3>
+            <span className="gold-line mb-4 block" />
+            <p className="mb-2 font-serif text-zinc-700">
+              <a
+                href={`mailto:${CLINIC_EMAIL}`}
+                className="font-display hover:text-[var(--primary)]"
+              >
+                <strong>{CLINIC_EMAIL}</strong>
+              </a>
+            </p>
+            <p className="font-serif text-sm italic text-zinc-600">
+              Отвечаем в течение 24 часов
+            </p>
+          </div>
+
+          {/* Часы работы */}
+          <div className="card-luxury">
+            <p className="hero-eyebrow mb-3 text-[var(--secondary-dark)]">
+              Часы работы
+            </p>
+            <h3 className="mb-4">Ежедневно</h3>
+            <span className="gold-line mb-4 block" />
+            <p className="mb-1 font-display text-2xl text-[var(--primary)]">
+              09:00 — 20:00
+            </p>
+            <p className="font-serif text-sm italic text-zinc-600">
+              UTC+8 (по времени Хайнаня). Запись по телефону или через форму
+              ниже.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* === МЕССЕНДЖЕРЫ === */}
+      <section className="mx-auto mt-16 max-w-3xl text-center">
+        <p className="hero-eyebrow mb-3 text-[var(--secondary-dark)]">
+          Мессенджеры
+        </p>
+        <h2>Напишите нам напрямую</h2>
+        <span className="gold-line mx-auto my-4 block" />
+        <p className="mb-8 font-serif text-lg italic text-zinc-600">
+          Русскоязычный координатор на связи в WhatsApp и Telegram
+        </p>
+        <ul className="flex flex-wrap items-center justify-center gap-4">
+          {MESSENGERS.map((m) =>
+            m.url ? (
+              <li key={m.key}>
+                <a
+                  href={m.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block border border-[var(--border)] px-8 py-4 font-ui text-sm uppercase tracking-luxury transition hover:border-[var(--primary)] hover:text-[var(--primary)]"
+                >
+                  {m.label}
+                </a>
+              </li>
+            ) : (
+              /* Instagram: ссылки по номеру телефона нет — показываем номер */
+              <li
+                key={m.key}
+                className="inline-block border border-[var(--border)] px-8 py-4 font-ui text-sm uppercase tracking-luxury text-zinc-500"
+                title={`${m.label}: ${PHONE_DISPLAY}`}
+              >
+                {m.label} · {PHONE_DISPLAY}
+              </li>
+            )
+          )}
+        </ul>
+      </section>
+
+      {/* === КАРТА (заглушка) === */}
+      <section className="mx-auto mt-20 max-w-5xl">
+        <div className="mb-8 text-center">
+          <p className="hero-eyebrow mb-3">Расположение</p>
+          <h2>Как нас найти</h2>
+        </div>
+
+        <div className="relative overflow-hidden border border-[var(--border)] bg-[var(--surface-alt)]">
+          <div className="flex h-80 items-center justify-center px-6 text-center">
+            <div>
+              <div className="mb-4 font-display text-5xl text-[var(--secondary-dark)]">
+                ◇
+              </div>
+              <p className="mb-2 font-display text-xl">Санаторий ТАЙЦЗИ</p>
+              <p className="font-serif text-zinc-700">
+                бухта Дадунхай, Ялонгбэй, Саньяван
+              </p>
+              <p className="font-serif text-sm text-zinc-500">
+                город Санья, остров Хайнань
+              </p>
+              <p className="mt-3 font-ui text-xs uppercase tracking-luxury text-zinc-400">
+                Интерактивная карта · скоро
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* === КАК ДОБРАТЬСЯ + ЧТО ДАЛЬШЕ === */}
+      <section className="mx-auto mt-20 max-w-5xl">
+        <div className="mb-8 text-center">
+          <p className="hero-eyebrow mb-3">Организация поездки</p>
+          <h2>Как добраться и что происходит после заявки</h2>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6">
+            <h3 className="mb-3 font-display text-xl">
+              От аэропорта Санья Феникс
+            </h3>
+            <p className="mb-3 font-serif text-zinc-700">
+              Аэропорт Санья Феникс (SYX) находится примерно в 30 километрах
+              от заливов Дадунхай и Саньяван, около 50 километров до Ялонгбэя.
+              На такси или в заказном трансфере — 40–60 минут в зависимости от
+              трафика. Координатор сообщает конкретный адрес отеля и
+              ориентиры после бронирования.
+            </p>
+            <p className="mb-3 font-serif text-zinc-700">
+              Если вы летите с пересадкой через Пекин или Гуанчжоу, имейте в
+              виду: внутренний перелёт в Санью — отдельный билет, и между
+              рейсами нужно закладывать минимум 4 часа на пересадку и
+              получение багажа.
+            </p>
+            <p className="font-serif text-sm text-zinc-600">
+              Нужна виза КНР. Для граждан России доступны групповые туры и
+              упрощённые правила для отдельных категорий — актуальные условия
+              лучше уточнить перед бронированием. Разбор документов есть в{" "}
+              <Link
+                href="/blog/visa-khainan-2026/"
+                className="text-emerald-700 hover:underline"
+              >
+                статье о визе
+              </Link>
+              .
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6">
+            <h3 className="mb-3 font-display text-xl">
+              Порядок записи на приём
+            </h3>
+            <ol className="mb-3 list-decimal space-y-2 pl-5 font-serif text-zinc-700">
+              <li>
+                Вы оставляете заявку в форме ниже или пишете в WhatsApp —
+                координатор отвечает в течение 24 часов.
+              </li>
+              <li>
+                Обсуждаем задачу: с какой жалобой обращаетесь, какие
+                обследования уже есть, сколько планируете провести времени.
+              </li>
+              <li>
+                Подбираем врача и отеля, считаем стоимость программы —
+                фиксируем её до начала лечения.
+              </li>
+              <li>
+                На первичной консультации врач проводит пульсовую
+                диагностику и составляет индивидуальный план. Консультация
+                бесплатна.
+              </li>
+            </ol>
+            <p className="font-serif text-sm text-zinc-600">
+              Персональный медицинский переводчик присутствует на каждом
+              приёме — документы и заключения вы получаете на русском языке.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* === ФИЛИАЛЫ === */}
+      <section className="mx-auto mt-20 max-w-5xl">
+        <div className="mb-8 text-center">
+          <p className="hero-eyebrow mb-3">Адреса</p>
+          <h2>Наши филиалы и врачи</h2>
+        </div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          {LOCATIONS.map((l) => (
+            <div
+              key={l.slug}
+              className="rounded-2xl border border-[var(--border)] p-5"
+            >
+              <h3 className="mb-2 font-display text-lg">{l.name}</h3>
+              <p className="mb-1 font-serif text-sm text-zinc-700">
+                {l.address}
+              </p>
+              <p className="mb-3 font-serif text-sm text-zinc-600">
+                {l.hotel}
+              </p>
+              {l.doctors.length > 0 && (
+                <p className="font-serif text-sm text-zinc-600">
+                  Принимают:{" "}
+                  {l.doctors
+                    .map((d) => VRACHI.find((v) => v.slug === d)?.nameRu)
+                    .filter(Boolean)
+                    .join(", ")}
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* === ФОРМА ЗАПИСИ === */}
+      <section className="mx-auto mt-20 max-w-2xl">
+        <div className="mb-8 text-center">
+          <p className="hero-eyebrow mb-3">Запись на приём</p>
+          <h2>Оставьте заявку</h2>
+          <span className="gold-line mx-auto my-4 block" />
+          <p className="font-serif text-lg italic text-zinc-600">
+            Координатор свяжется с вами в течение 24 часов
+          </p>
+        </div>
+
+        <ContactForm />
+      </section>
+    </main>
+  );
+}

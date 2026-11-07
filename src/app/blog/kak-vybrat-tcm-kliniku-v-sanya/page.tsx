@@ -1,19 +1,39 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BlogSchema, blogMetadata } from "@/components/BlogSchema";
 
 export const metadata: Metadata = {
   title:
     "Как выбрать клинику ТКМ в Санья: гид для русских гостей | fenix-sanyamed",
   description:
     "Подробный гид: как выбрать клинику традиционной китайской медицины на Хайнане. На что обратить внимание: лицензия, врачи, процедуры, цены, безопасность.",
-  alternates: {
-    canonical: "https://fenix-sanyamed.com/blog/kak-vybrat-tcm-kliniku-v-sanya/",
-  },
+  ...blogMetadata({
+    title: "Как выбрать клинику ТКМ в Санья: гид для русских гостей",
+    description:
+      "Как выбрать клинику ТКМ в Санья: лицензия, врачи, процедуры, цены, безопасность.",
+    url: "https://www.fenix-sanyamed.com/blog/kak-vybrat-tcm-kliniku-v-sanya/",
+    datePublished: "2026-09-06",
+    dateModified: "2026-10-17",
+    keywords: ["выбрать клинику ТКМ", "Санья", "Хайнань", "русский гид"],
+    languages: {
+      ru: "https://www.fenix-sanyamed.com/blog/kak-vybrat-tcm-kliniku-v-sanya/",
+      "x-default": "https://www.fenix-sanyamed.com/blog/kak-vybrat-tcm-kliniku-v-sanya/",
+      en: "https://www.fenix-sanyamed.com/en/blog/kak-vybrat-tcm-kliniku-v-sanya/",
+    },
+  }),
 };
 
 export default function BlogPost() {
   return (
-    <main className="mx-auto max-w-3xl px-4 py-12">
+    <main id="main" className="mx-auto max-w-3xl px-4 py-12">
+      <BlogSchema
+        title="Как выбрать клинику ТКМ в Санья: гид для русских гостей"
+        description="Как выбрать клинику традиционной китайской медицины на Хайнане: лицензия, врачи, процедуры, цены, безопасность."
+        url="https://www.fenix-sanyamed.com/blog/kak-vybrat-tcm-kliniku-v-sanya/"
+        datePublished="2026-09-06"
+        dateModified="2026-10-17"
+        keywords={["выбрать клинику", "ТКМ", "Санья"]}
+      />
       <nav className="mb-8 text-sm text-zinc-600">
         <Link href="/" className="hover:underline">
           Главная
@@ -189,7 +209,7 @@ export default function BlogPost() {
         </p>
         <ul className="list-disc space-y-1 pl-6 text-zinc-700">
           <li>Получили государственную лицензию на ТКМ</li>
-          <li>Открыли 4 филиала в бухтах Санья (Дадунхай, Ялунбэй, Саньябэй)</li>
+          <li>Открыли 4 филиала в бухтах Санья (Дадунхай, Ялунвань, Саньябэй)</li>
           <li>Собрали команду из 8 врачей с опытом 20–43 лет</li>
           <li>Разработали 10 комплексных программ для разных состояний</li>
         </ul>

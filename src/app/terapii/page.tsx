@@ -2,11 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Процедуры ТКМ | Медицинский центр fenix-sanyamed",
+  title: "Процедуры традиционной китайской медицины",
   description:
-    "Пять основных процедур традиционной китайской медицины: иглоукалывание, Туйна, фитотерапия, вакуум-терапия, гуаша.",
+    "Семь процедур традиционной китайской медицины в санатории ТАЙЦЗИ: иглоукалывание, массаж Туйна, фитотерапия, моксотерапия, вакуум-терапия, Гуаша и консультация с пульсовой диагностикой.",
   alternates: {
-    canonical: "https://fenix-sanyamed.com/terapii/",
+    canonical: "https://www.fenix-sanyamed.com/terapii/",
+    languages: {
+      ru: "https://www.fenix-sanyamed.com/terapii/",
+      "x-default": "https://www.fenix-sanyamed.com/terapii/",
+      en: "https://www.fenix-sanyamed.com/en/terapii/",
+    },
   },
 };
 
@@ -51,11 +56,27 @@ const THERAPIES = [
       "Нефритовый скребок с маслом. Лицо и тело. Популярно у русских гостей 25–45 лет.",
     emphasis: "Тренд в wellness-индустрии 2023–2026.",
   },
+  {
+    slug: "mokso-terapiya",
+    title: "Моксотерапия",
+    subtitle: "Прижигание полынными сигаретами",
+    description:
+      "Прогревание биологически активных зон полынной сигарой по назначению врача. Улучшает кровообращение, снимает мышечный спазм.",
+    emphasis: "Входит в программы восстановления иммунитета.",
+  },
+  {
+    slug: "konsultaciya",
+    title: "Консультация врача ТКМ",
+    subtitle: "Пульсовая диагностика",
+    description:
+      "Первичная консультация: пульсовая диагностика, осмотр языка, анализ истории болезни и подбор индивидуальной программы лечения.",
+    emphasis: "Бесплатно для иностранных пациентов при записи на программу.",
+  },
 ];
 
 export default function TerapiiPage() {
   return (
-    <main className="px-6 py-20">
+    <main id="main" className="px-6 py-20">
       {/* === HEADER === */}
       <section className="mx-auto max-w-4xl text-center">
         <p className="hero-eyebrow mb-6">

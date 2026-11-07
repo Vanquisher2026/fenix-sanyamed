@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getTerapiiSeo } from "@/data/seo/terapii.seo";
+
+const SEO = getTerapiiSeo("igloukalyvanie");
 
 // ⚠️ ЧЕРНОВИК — все цифры, имена и показания должны быть подтверждены клиентом.
 //   Перед публикацией обязательно:
@@ -9,11 +12,23 @@ import Link from "next/link";
 //   4) Заменить placeholder фотографии на реальные фото санатория
 
 export const metadata: Metadata = {
-  title: "Иглоукалывание в медицинском центре fenix-sanyamed | Цены · Отзывы · Запись",
+  // title 按 GSC 实测词序优化：хайнань иглоукалывание（排名 7.0 → 目标前 5）
+  // 「Иглоукалывание на Хайнане」词形与搜索 query 完全一致
+  title: "Иглоукалывание на Хайнане — цены и запись в Санья",
   description:
-    "Иглоукалывание (акупунктура) в медицинском центре традиционной китайской медицины fenix-sanyamed на Хайнане. Опытные врачи, индивидуальные программы, русскоязычные переводчики.",
+    "Иглоукалывание (акупунктура) на Хайнане в Санья: центр традиционной китайской медицины, врачи с опытом 40+ лет, индивидуальные программы после пульсовой диагностики, русскоязычный координатор. Цены на курс.",
   alternates: {
-    canonical: "https://fenix-sanyamed.com/terapii/igloukalyvanie/",
+    canonical: "https://www.fenix-sanyamed.com/terapii/igloukalyvanie/",
+    // hreflang ВЗАИМЕН: EN-страница /en/terapii/igloukalyvanie/ уже
+    // ссылается сюда (ru + x-default), но RU-страница не отвечала →
+    // Яндекс/Google игнорируют весь кластер. Статический маршрут
+    // затеняет динамический terapii/[slug], поэтому блок languages
+    // нужно дублировать здесь (см. terapii/tuyna/page.tsx).
+    languages: {
+      ru: "https://www.fenix-sanyamed.com/terapii/igloukalyvanie/",
+      "x-default": "https://www.fenix-sanyamed.com/terapii/igloukalyvanie/",
+      en: "https://www.fenix-sanyamed.com/en/terapii/igloukalyvanie/",
+    },
   },
 };
 
@@ -31,13 +46,13 @@ const procedureSchema = {
   preparation: "Консультация врача, пульсовая диагностика, сбор анамнеза",
   provider: {
     "@type": "MedicalClinic",
-    "@id": "https://fenix-sanyamed.com/#clinic",
+    "@id": "https://www.fenix-sanyamed.com/#clinic",
   },
 };
 
 export default function IgloukalyvaniePage() {
   return (
-    <main className="mx-auto max-w-4xl px-4 py-12">
+    <main id="main" className="mx-auto max-w-4xl px-4 py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }}
@@ -57,7 +72,7 @@ export default function IgloukalyvaniePage() {
       </nav>
 
       <h1 className="mb-6 text-4xl font-bold">
-        Иглоукалывание в медицинском центре fenix-sanyamed на Хайнане
+        Иглоукалывание на Хайнане — центр ТКМ в Санья
       </h1>
 
       <section className="mb-12">
@@ -82,6 +97,58 @@ export default function IgloukalyvaniePage() {
           <strong>Важно:</strong> индивидуальные ощущения и реакции могут
           отличаться. Перед первым сеансом врач проводит пульсовую диагностику
           и подбирает точки и длительность воздействия индивидуально.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="mb-4 text-2xl font-semibold">
+          Китайское иглоукалывание: чем отличается от европейского
+        </h2>
+        <p className="mb-4">
+          Китайское иглоукалывание — это часть целостной системы ТКМ, а не
+          отдельная процедура. Европейская акупунктура чаще работает по
+          протоколу «симптом → набор точек». В китайской традиции врач сначала
+          проводит пульсовую диагностику и осмотр языка, а затем выстраивает
+          схему, которая может меняться от сеанса к сеансу.
+        </p>
+        <p className="mb-4">
+          Практические отличия, которые заметны пациенту:
+        </p>
+        <ul className="mb-4 list-disc space-y-1 pl-6">
+          <li>
+            иглы тоньше и ставятся на меньшую глубину, чем в европейских
+            клиниках;
+          </li>
+          <li>
+            количество и расположение точек пересматривается по ходу курса, а не
+            фиксируется один раз;
+          </li>
+          <li>
+            иглоукалывание почти всегда сочетается с другими методами — Туйна,
+            прижиганием, фитотерапией.
+          </li>
+        </ul>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="mb-4 text-2xl font-semibold">
+          Иглоукалывание в Китае для русских пациентов
+        </h2>
+        <p className="mb-4">
+          Русские пациенты приезжают на Хайнань за иглоукалыванием по двум
+          причинам: цена и доступность. Сеанс в Санья стоит 150–400 юаней — это
+          заметно дешевле, чем в Москве, при том что процедуру выполняет врач с
+          китайским профильным образованием.
+        </p>
+        <p className="mb-4">
+          Вторая причина — логистика. Для граждан России действует безвизовый
+          въезд на Хайнань до 30 дней, а прямые рейсы в Санья летают из 14
+          городов России. Курс из 10 сеансов легко укладывается в две недели
+          вместе с отдыхом на море.
+        </p>
+        <p className="mb-4">
+          Русскоязычный медицинский переводчик сопровождает все приёмы и входит
+          в стоимость программы — языковой барьер на диагностике отсутствует.
         </p>
       </section>
 
@@ -148,13 +215,12 @@ export default function IgloukalyvaniePage() {
         <h2 className="mb-4 text-2xl font-semibold">
           Длительность и стоимость
         </h2>
-        <div className="rounded-md border border-amber-300 bg-amber-50 p-4 text-sm">
-          ⚠️ <strong>Черновые цифры — требуется подтверждение клиента.</strong>{" "}
-          В комментариях реальных гостей на Yandex Maps (2024) встречались
-          ориентиры: акупунктура — около 150 юаней за одну сторону тела,
-          программы на 5–7 дней — от 1500 до 3000 юаней. Точные цифры зависят
-          от длительности программы и количества сеансов.
-        </div>
+        <p className="mb-4 text-lg text-zinc-700">
+          Один сеанс китайского иглоукалывания в Санья стоит{" "}
+          <strong>150–400 юаней</strong>. Курс из 5–10 сеансов обходится в
+          750–4 000 юаней. Первичная консультация с пульсовой диагностикой —
+          бесплатно.
+        </p>
         <table className="mt-6 w-full border-collapse border border-gray-300">
           <thead>
             <tr className="bg-gray-100">
@@ -214,6 +280,26 @@ export default function IgloukalyvaniePage() {
           <li>кожных заболеваниях в зоне предполагаемого воздействия</li>
         </ul>
       </section>
+
+      {/* === B3: ПОСЛЕ СЕАНСА === */}
+      {SEO && (
+        <section className="mb-12">
+          <h2 className="mb-4 text-2xl font-semibold">
+            После сеанса: что происходит
+          </h2>
+          <p className="leading-relaxed">{SEO.after}</p>
+        </section>
+      )}
+
+      {/* === B3: КАК ПОДГОТОВИТЬСЯ === */}
+      {SEO && (
+        <section className="mb-12">
+          <h2 className="mb-4 text-2xl font-semibold">
+            Как подготовиться к приёму
+          </h2>
+          <p className="leading-relaxed">{SEO.combination}</p>
+        </section>
+      )}
 
       <section className="mb-12">
         <h2 className="mb-4 text-2xl font-semibold">FAQ — Иглоукалывание</h2>

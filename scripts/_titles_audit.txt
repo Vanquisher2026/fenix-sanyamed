@@ -1,0 +1,156 @@
+[ru] /
+      T: Санаторий ТАЙЦЗИ — традиционная китайская медицина в Санья
+      H: Санаторий ТАЙЦЗИ в Санья: лечение в Китае методами ТКМ
+[ru] /blog
+      T: Блог о традиционной китайской медицине
+      H: Блог fenix-sanyamed
+[ru] /blog/5-prichin-vybrat-khainan-dlya-tkm
+      T: 5 причин выбрать Хайнань для лечения традиционной китайской медициной
+      H: —
+[ru] /blog/chto-takoe-tkm
+      T: Традиционная китайская медицина: что это такое
+      H: Традиционная китайская медицина: что это такое простыми словами
+[ru] /blog/hainan-ili-udalyanchi-sravnenie
+      T: Хайнань или Удалянчи: где лечиться
+      H: Хайнань или Удалянчи: где лечиться русским — честное сравнение
+[ru] /blog/kak-doletet-iz-moskvy-do-sanya
+      T: Как долететь из Москвы до Санья дешево: 5 лайфхаков
+      H: Как долететь из Москвы до Санья дешево: 5 лайфхаков
+[ru] /blog/kak-vybrat-tcm-kliniku-v-sanya
+      T: Как выбрать клинику ТКМ в Санья: гид для русских гостей | fenix-sanyamed
+      H: Как выбрать клинику традиционной китайской медицины в Санья
+[ru] /blog/otzyvy-patsientov-tkm
+      T: Отзывы пациентов о лечении в Китае ТКМ: реальный опыт 2026 | fenix-sanyamed
+      H: Отзывы пациентов о лечении методами ТКМ в нашей клинике
+[ru] /blog/stoimost-igloukalyvaniya-sanya-2026
+      T: Стоимость лечения иглоукалыванием в Санья в 2026 году | fenix-sanyamed
+      H: Стоимость лечения иглоукалыванием в Санья в 2026 году
+[ru] /blog/visa-khainan-2026
+      T: Виза в Китай для лечения: безвизовый режим Хайнань 2026 | fenix-sanyamed
+      H: Виза в Китай для лечения в 2026 году: правила безвизового въезда на Хайн
+[ru] /czeny
+      T: Цены на лечение в Санья — сколько стоит курс ТКМ
+      H: Сколько стоит лечение в Санья
+[ru] /dlya-russkikh
+      T: Санаторий ТАЙЦЗИ — лечение ТКМ на Хайнане для русских
+      H: Лечение ТКМ на Хайнане для русскоязычных пациентов
+[ru] /en
+      T: Taiji Sanatorium (Fenix-Sanyamed) — TCM in Sanya, Hainan
+      H: Taiji Sanatorium
+[EN] /en/blog
+      T: Blog on Traditional Chinese Medicine
+      H: fenix-sanyamed blog
+[EN] /en/blog/5-prichin-vybrat-khainan-dlya-tkm
+      T: 5 reasons to choose Hainan for traditional Chinese medicine
+      H: 5 reasons to choose Hainan for traditional Chinese medicine
+[EN] /en/blog/chto-takoe-tkm
+      T: Traditional Chinese Medicine: what it actually is
+      H: Traditional Chinese Medicine: what it actually is
+[EN] /en/blog/hainan-ili-udalyanchi-sravnenie
+      T: Hainan or Wudalianchi: where to go for treatment
+      H: Hainan or Wudalianchi: where to go for treatment
+[EN] /en/blog/kak-doletet-iz-moskvy-do-sanya
+      T: How to fly from Moscow to Sanya cheaply: 5 practical tips
+      H: How to fly from Moscow to Sanya cheaply: 5 practical tips
+[EN] /en/blog/kak-vybrat-tcm-kliniku-v-sanya
+      T: How to choose a Traditional Chinese Medicine clinic in Sanya
+      H: How to choose a Traditional Chinese Medicine clinic in Sanya
+[EN] /en/blog/otzyvy-patsientov-tkm
+      T: Patient stories: treatment with TCM at our clinic
+      H: Patient stories: treatment with TCM at our clinic
+[EN] /en/blog/stoimost-igloukalyvaniya-sanya-2026
+      T: Acupuncture cost in Sanya: 2026 prices
+      H: Acupuncture cost in Sanya: 2026 prices
+[EN] /en/blog/visa-khainan-2026
+      T: China visa for medical treatment in 2026: the Hainan visa-free regime
+      H: China visa for medical treatment in 2026: the Hainan visa-free regime
+[EN] /en/czeny
+      T: TCM treatment prices in Sanya — how much a course costs
+      H: How much does treatment in Sanya cost?
+[EN] /en/geo
+      T: GEO Catalogue: TAIJI Sanatorium (fenix-sanyamed)
+      H: GEO Catalogue: TAIJI Sanatorium
+[EN] /en/kontakty
+      T: Contact and booking
+      H: Get in touch
+[EN] /en/o-sanatorii
+      T: About the centre — history and licence
+      H: The
+[EN] /en/programmy
+      T: TCM treatment programmes in Sanya
+      H: Ten treatment programmes
+[EN] /en/programmy/[slug]
+      T: Programme not found
+      H: {p.title}
+[EN] /en/putevka
+      T: Treatment voucher on Hainan — TCM programmes, prices and how to book
+      H: A treatment voucher for Hainan
+[EN] /en/sanatorium-tajczi
+      T: TAIJI Sanatorium — Traditional Chinese Medicine in Sanya, Hainan
+      H: TAIJI Sanatorium — traditional Chinese medicine in Sanya
+[EN] /en/sanatoriy-khaynanya
+      T: Sanatorium in Hainan, China — TCM treatment in Sanya, prices and programmes
+      H: A TCM sanatorium on Hainan Island
+[EN] /en/spa-i-krasota
+      T: SPA and cosmetic TCM treatments in Hainan — skin, face and body
+      H: SPA and cosmetic treatments with TCM
+[EN] /en/terapii
+      T: Traditional Chinese medicine procedures in Sanya
+      H: Traditional Chinese medicine procedures
+[EN] /en/terapii/[slug]
+      T: —
+      H: {p.name}{" "}
+[EN] /en/vrachi
+      T: Doctors of traditional Chinese medicine
+      H: Our medical team
+[EN] /en/vrachi/[slug]
+      T: Physician not found
+      H: {v.name}
+[ru] /geo
+      T: GEO-каталог: Санаторий ТАЙЦЗИ (fenix-sanyamed)
+      H: GEO-каталог: Санаторий ТАЙЦЗИ
+[ru] /kontakty
+      T: Контакты санатория ТАЙЦЗИ в Санья — запись на лечение в Китае
+      H: Контакты санатория ТАЙЦЗИ в Санья
+[ru] /o-sanatorii
+      T: О санатории ТАЙЦЗИ в Санья — история, лицензии, 4 филиала на Хайнане
+      H: О санатории ТАЙЦЗИ в Санья
+[ru] /programmy
+      T: Программы лечения ТКМ в Санья — 10 направлений санатория ТАЙЦЗИ
+      H: Десять лечебных программ ТКМ в Санья
+[ru] /programmy/[slug]
+      T: Программа не найдена
+      H: {p.title}
+[ru] /putevka
+      T: Санаторная путёвка на Хайнань — лечение ТКМ, цены и оформление
+      H: Санаторная путёвка на Хайнань
+[ru] /sanatorium-tajczi
+      T: Санаторий китайской медицины ТАЙЦЗИ в Санье, Хайнань
+      H: Санаторий ТАЙЦЗИ — традиционная китайская медицина в Санья
+[ru] /sanatoriy-khaynanya
+      T: Санаторий Хайнань — санаторий ТАЙЦЗИ в Санье, цены и программы
+      H: Санаторий на Хайнане — лечение традиционной китайской медициной
+[ru] /spa-i-krasota
+      T: SPA и косметология на Хайнане — процедуры ТКМ для кожи и волос
+      H: SPA и косметология методами ТКМ
+[ru] /terapii
+      T: Процедуры традиционной китайской медицины
+      H: Пять направлений традиционной китайской медицины
+[ru] /terapii/[slug]
+      T: —
+      H: {p.name}{" "}
+[ru] /terapii/igloukalyvanie
+      T: Иглоукалывание на Хайнане — цены и запись в Санья
+      H: Иглоукалывание на Хайнане — центр ТКМ в Санья
+[ru] /terapii/tuyna
+      T: Массаж Туйна — цены и запись в Санья
+      H: Массаж Туйна в медицинском центре fenix-sanyamed на Хайнане
+[ru] /vrachi
+      T: Врачи ТКМ в Санья — китайские врачи санатория ТАЙЦЗИ (Хайнань)
+      H: Врачи ТКМ в Санья — команда санатория ТАЙЦЗИ
+[ru] /vrachi/[slug]
+      T: Врач не найден
+      H: {v.nameRu}
+[ru] /zh
+      T: 三业泰济中医院 (Fenix-Sanyamed) — 海南三亚中医诊疗
+      H: 三业泰济中医院

@@ -223,3 +223,560 @@ a {
   font-size: 0.875rem;
   color: var(--foreground);
 }
+
+/* ============================================================================
+ * МОБИЛЬНАЯ ОПТИМИЗАЦИЯ (2026-10-04)
+ * Улучшения для сенсорных экранов, мелких шрифтов, производительности
+ * ============================================================================ */
+
+/* === Touch targets: Apple HIG 44pt, Google MD 48dp === */
+@media (max-width: 767px) {
+  .btn-tilda,
+  .btn-tilda-secondary {
+    /* Увеличиваем кнопки до комфортного тапа (минимум 44px высота) */
+    min-height: 48px;
+    padding: 0.875rem 1.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* Безопасные отступы для большого пальца */
+    margin: 0.5rem 0;
+  }
+
+  /* Карточки программ на мобиле: больше воздуха между ними */
+  .card-tilda {
+    aspect-ratio: 3 / 4;
+    border-radius: 20px;
+  }
+
+  .card-tilda-content {
+    padding: 1.25rem;
+  }
+
+  /* Улучшенная типографика для чтения на телефоне */
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  /* Уменьшаем горизонтальный padding контейнеров на узких экранах */
+  .section-padding {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  /* Hero на мобиле — компактнее */
+  .hero-section {
+    border-radius: 20px;
+  }
+}
+
+/* === Hamburger menu / Nav улучшения === */
+@media (max-width: 767px) {
+  .nav-tilda {
+    padding: 0.5rem 0;
+  }
+
+  /* Все ссылки в навигации — большая зона тапа */
+  .nav-link {
+    padding: 0.75rem 0;
+    display: block;
+    min-height: 44px;
+    line-height: 1.5;
+  }
+
+  /* Hero на мобиле: кнопки в столбик */
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons > * {
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* === Таблицы — горизонтальный скролл на мобиле (для czeny) === */
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* === Скрытие текстового "lorem"-а при узком экране (оптимизация) === */
+@media (max-width: 480px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+/* === iOS safe area (для iPhone с вырезом) === */
+@supports (padding: max(0px)) {
+  .nav-tilda,
+  footer {
+    padding-left: max(1.5rem, env(safe-area-inset-left));
+    padding-right: max(1.5rem, env(safe-area-inset-right));
+  }
+}
+
+/* === Быстрая загрузка шрифтов: предотвращаем CLS === */
+html {
+  font-display: swap;
+}
+
+/* === Предотвращение горизонтального скролла от картинок ===
+   ⚠️ НЕ добавлять сюда `height: auto` без @layer — неслоёные правила
+   в Tailwind v4 перебивают утилитарные классы (.h-10) и логотип/иконки
+   раздувались до натуральной высоты. См. NavBar (inline-style для logo). */
+@layer base {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* === Оптимизация активной зоны клика для inline-ссылок === */
+a:not(.btn-tilda):not(.btn-tilda-secondary):not(.card-tilda):not(.nav-link) {
+  /* Сохраняем естественную зону, но улучшаем читаемость */
+  text-underline-offset: 3px;
+}
+
+a:not(.btn-tilda):not(.btn-tilda-secondary):not(.card-tilda):not(.nav-link):hover {
+  text-decoration: underline;
+}
+
+/* ============================================================================
+ * МОБИЛЬНАЯ ОПТИМИЗАЦИЯ v2 (2026-10-17)
+ * — предотвращение iOS Safari auto-zoom на полях <16px
+ * — унифицированные touch-targets 44×44pt (Apple HIG)
+ * — sticky-CTA не перекрывает контент
+ * — a11y / reduced-motion / dark scheme
+ * ============================================================================ */
+
+/* iOS Safari auto-zoom workaround: <input> < 16px вызывает зум фокуса */
+@media (max-width: 767px) {
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 1rem; /* 16px = размер по умолчанию, без зума */
+  }
+}
+
+/* Универсальные touch-targets — 44pt minimum */
+@media (max-width: 767px) {
+  /* Любой кликабельный элемент в футере / навигации */
+  footer a,
+  footer button,
+  .footer a,
+  .footer button {
+    min-height: 44px;
+  }
+
+  /* Inline-ссылки в тексте — только в крупных фрагментах (h2, p) */
+  main p a,
+  main li a {
+    padding: 0.25rem 0;
+  }
+
+  /* Кнопки внутри карточек — полная ширина, удобный тап */
+  .card-luxury a,
+  .card-tilda a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* Sticky-CTA снизу не должен перекрывать последние строки контента.
+   Добавляем padding-bottom на мобильных для ВСЕХ <main>. */
+@media (max-width: 767px) {
+  main {
+    padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* iOS safe area — нижний отступ у sticky-CTA */
+.mobile-cta {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* ============================================================================
+ * АДАПТАЦИЯ ПОД ВСЕ ТЕЛЕФОНЫ
+ * Диапазон: 320px (iPhone SE 1-го gen / малые Android) → 430px (Pro Max)
+ * и до 768px+ (планшеты). Проверено на ширинах 320 / 360 / 375 / 390 / 414 / 430.
+ * ========================================================================== */
+
+/* Ни одна страница не должна прокручиваться по горизонтали.
+   overflow-x:hidden на body ломает position:sticky, поэтому дублируем
+   через clip на html + гарантируем, что виновник не вылезает. */
+html {
+  overflow-x: clip;
+}
+
+body {
+  overflow-x: clip;
+  /* Текст не должен разрываться словами посреди строки на узких экранах */
+  overflow-wrap: break-word;
+}
+
+/* === Узкие экраны ≤ 360px (iPhone SE, старые Android) ===
+   Уменьшаем горизонтальные отступы и размеры заголовков, иначе
+   2-колоночные сетки программ/врачей выходят за границу экрана. */
+@media (max-width: 360px) {
+  :root {
+    --page-pad: 0.875rem;
+  }
+
+  .wa-fab__btn {
+    width: 52px;
+    height: 52px;
+  }
+
+  .wa-pulse__halo {
+    inset: -6px;
+  }
+
+  .wa-fab__halo {
+    inset: -10px;
+  }
+}
+
+/* === Широкие телефоны 414–430px (Plus / Pro Max) ===
+   Контент не должен растягиваться на весь экран — ограничиваем
+   шириной строки, чтобы строки текста не стали слишком длинными. */
+@media (min-width: 414px) and (max-width: 767px) {
+  .wa-fab {
+    right: 1.25rem;
+  }
+}
+
+/* === Ландшафтная ориентация телефона (≤ 900px по высоте) ===
+   Плавающая FAB в ландшафте уезжает вниз и перекрывает контент —
+   поднимаем её и уменьшаем. */
+@media (max-width: 900px) and (orientation: landscape) {
+  .wa-fab {
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .wa-fab__btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .wa-fab__btn svg,
+  .wa-pulse__btn svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* === Планшет в портрете (768–1023px) ===
+   FAB не должен наезжать на контент — уводим его вправо с большим отступом. */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .wa-fab {
+    bottom: 2rem;
+    right: 1.5rem;
+  }
+}
+
+/* === Минимальная ширина: 320px ===
+   Ниже этой ширины сетки переходят в одну колонку, чтобы не ломать вёрстку. */
+@media (max-width: 359px) {
+  .grid-cols-2,
+  .grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+/* Tap-highlight (iOS / Android) — зелёный outline лучше дефолтного серого */
+* {
+  -webkit-tap-highlight-color: rgba(242, 133, 0, 0.18);
+}
+
+/* === prefers-reduced-motion: уважение к пользовательской настройке === */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* === prefers-color-scheme: тёмная тема (экономит батарею на OLED) === */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0e1f1c;
+    --foreground: #f0f7f5;
+    --surface: #15302b;
+    --surface-alt: #1a3a34;
+    --border: rgba(255, 255, 255, 0.1);
+  }
+  body {
+    color: var(--foreground);
+  }
+  /* Карточки и таблицы на тёмной теме — мягче глазами */
+  .card-luxury,
+  .card-tilda {
+    background-color: var(--surface) !important;
+    border-color: var(--border) !important;
+  }
+  details[open] {
+    background: var(--surface);
+  }
+  details summary {
+    color: var(--foreground);
+  }
+}
+
+/* === long content не прыгает из-за sticky-CTA === */
+main details + details {
+  margin-top: 0.75rem;
+}
+
+/* === Изображения: предотвращаем CLS, включаем lazy === */
+img[loading="lazy"] {
+  background: #f5f5f4;
+}
+
+/* === Узкие экраны (< 380px): iPhone SE / старые Android === */
+@media (max-width: 380px) {
+  h1 {
+    font-size: 1.65rem !important;
+  }
+  h2 {
+    font-size: 1.35rem !important;
+  }
+  /* Сокращаем длинные кнопки до 2 строк max */
+  .btn-luxury,
+  .btn-tilda {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* === Горизонтальная прокрутка таблиц цен на мобиле === */
+@media (max-width: 767px) {
+  table {
+    font-size: 0.875rem;
+  }
+  table th,
+  table td {
+    padding: 0.5rem !important;
+  }
+}
+
+/* === FOCUS-VISIBLE — клавиатурная навигация (a11y) === */
+:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* === Печать: скрываем навигацию / CTA / чат === */
+@media print {
+  nav,
+  footer,
+  .mobile-cta,
+  .wa-fab,
+  script[src*="jivosite"] {
+    display: none !important;
+  }
+}
+
+/* ============================================================================
+ * ПЛАВАЮЩАЯ WHATSAPP-КНОПКА (FAB) С «ДЫШАЩИМ» ОРЕОЛОМ
+ * Кнопка следует за пользователем при прокрутке (position: fixed).
+ * Ореол — пульсирующая зелёная волна, привлекающая внимание к CTA.
+ * ========================================================================== */
+.wa-fab {
+  /* Мобильные: поднимаем выше липкого .mobile-cta (56px) + зазор.
+     Учитываем home-indicator на iPhone X и новее. */
+  bottom: calc(56px + 14px + env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 768px) {
+  /* На десктопе нижнего CTA-бара нет — возвращаем кнопку в угол */
+  .wa-fab {
+    bottom: 1.5rem;
+  }
+}
+
+.wa-fab__btn {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 9999px;
+  background: #25d366; /* WhatsApp green */
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.18),
+    0 0 0 1px rgba(255, 255, 255, 0.12) inset;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wa-fab__btn:hover {
+  transform: scale(1.08);
+  background: #1fbb59;
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.22),
+    0 0 0 1px rgba(255, 255, 255, 0.18) inset;
+}
+
+.wa-fab__btn:active {
+  transform: scale(0.96);
+}
+
+/* Пульсирующий ореол: два «эхо»-кольца расходятся волной */
+.wa-fab__halo {
+  position: absolute;
+  inset: -12px;
+  border-radius: 9999px;
+  background: #25d366;
+  opacity: 0;
+  pointer-events: none;
+  animation: wa-pulse 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  z-index: 0;
+}
+
+.wa-fab__halo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: #25d366;
+  opacity: 0;
+  animation: wa-pulse 2.2s cubic-bezier(0.4, 0, 0.6, 1) 1.1s infinite;
+}
+
+@keyframes wa-pulse {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.55;
+  }
+  70% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+/* Уважаем системную настройку «уменьшить движение» */
+@media (prefers-reduced-motion: reduce) {
+  .wa-fab__halo,
+  .wa-fab__halo::after,
+  .wa-pulse__halo,
+  .wa-pulse__halo::after {
+    animation: none;
+    opacity: 0.25;
+  }
+  .wa-fab__btn,
+  .wa-pulse__btn {
+    transition: none;
+  }
+}
+
+/* ============================================================================
+ * WHATSAPP-КНОПКА С ДЫШАЩИМ ОРЕОЛОМ (переиспользуемый компонент)
+ * Используется в шапке (десктоп + мобильный) и как плавающая FAB.
+ * Разметка: <span class="wa-pulse"><span class="wa-pulse__halo"/>
+ *            <a class="wa-pulse__btn">…</a></span>
+ * ========================================================================== */
+.wa-pulse {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+
+/* Мобильный WA-руг в шапке: на десктопе он не нужен —
+   там уже есть кнопка в десктопной навигации.
+   Скрываем через собственный медиазапрос: каскад .wa-pulse{display:inline-flex}
+   перебивал бы утилитарный класс md:hidden по порядку в CSS. */
+@media (min-width: 768px) {
+  .wa-pulse--mobile-only {
+    display: none;
+  }
+}
+
+.wa-pulse__btn {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background: #25d366; /* WhatsApp green */
+  color: #fff;
+  font-weight: 700;
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.18),
+    0 0 0 1px rgba(255, 255, 255, 0.12) inset;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wa-pulse__btn:hover {
+  transform: scale(1.06);
+  background: #1fbb59;
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.22),
+    0 0 0 1px rgba(255, 255, 255, 0.18) inset;
+}
+
+.wa-pulse__btn:active {
+  transform: scale(0.96);
+}
+
+.wa-pulse__halo {
+  position: absolute;
+  inset: -7px;
+  border-radius: 9999px;
+  background: #25d366;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+  animation: wa-pulse 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.wa-pulse__halo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: #25d366;
+  opacity: 0;
+  animation: wa-pulse 2.2s cubic-bezier(0.4, 0, 0.6, 1) 1.1s infinite;
+}
+
