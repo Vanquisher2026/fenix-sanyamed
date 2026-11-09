@@ -6,18 +6,11 @@
   <meta name="robots" content="noindex, nofollow" />
   <title>ТАЙЦЗИ — Управление контентом</title>
   <script>
-    // 双 CDN 容灾：jsdelivr 主 + unpkg 备（中国/俄语区可达性优先 jsdelivr）
+    // 自托管 Static CMS bundle（6624KB）——彻底摆脱 CDN 可达性问题
     (function () {
-      var loaded = false;
       var s = document.createElement("script");
-      s.src = "https://cdn.jsdelivr.net/npm/@staticcms/app@4.4.0/dist/static-cms-app.js";
-      s.onload = function () { loaded = true; window.CMS && window.CMS.init(); };
-      s.onerror = function () {
-        var s2 = document.createElement("script");
-        s2.src = "https://unpkg.com/@staticcms/app@4.4.0/dist/static-cms-app.js";
-        s2.onload = function () { loaded = true; window.CMS && window.CMS.init(); };
-        document.head.appendChild(s2);
-      };
+      s.src = "./static-cms-app.js";
+      s.onload = function () { window.CMS && window.CMS.init(); };
       document.head.appendChild(s);
     })();
   </script>
