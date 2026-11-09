@@ -1,0 +1,112 @@
+backend:
+  name: github
+  repo: Vanquisher2026/fenix-sanyamed
+  branch: main
+
+media_folder: public/images/cms
+public_folder: /images/cms
+
+# 中文说明：集合按现有站点信息架构分类（与 src/data + src/app 一一对应）
+# 已收录页面的正文不做改动——CMS 只管“可变数据”：价格、医生、博客、新病种页
+collections:
+  # ===== 1. 价格（源自 src/data/prices.real.ts，156 项）=====
+  - name: prices
+    label: "价格管理 (Цены)"
+    label_singular: "价格项"
+    folder: content/prices
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    editor:
+      preview: false
+    summary: "{{priceCn}} — {{price}} ¥"
+    fields:
+      - { label: "分组", name: group, widget: select, options: [diagnostics, therapy, massage, physio, fito, complex, spa, dental] }
+      - { label: "俄文名称", name: name, widget: string }
+      - { label: "中文名称", name: nameCn, widget: string }
+      - { label: "slug", name: slug, widget: string }
+      - { label: "价格 (¥)", name: price, widget: number, min: 0 }
+      - { label: "时长", name: duration, widget: string, required: false }
+
+  # ===== 2. 医生（源自 src/data/vrachi.ts）=====
+  - name: doctors
+    label: "医生管理 (Врачи)"
+    folder: content/doctors
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    editor:
+      preview: false
+    summary: "{{nameRu}} — {{spec}}"
+    fields:
+      - { label: "俄文名", name: nameRu, widget: string }
+      - { label: "拼音/slug", name: slug, widget: string }
+      - { label: "专长(俄)", name: spec, widget: string }
+      - { label: "经验年限", name: exp, widget: number }
+      - { label: "简介(俄)", name: bio, widget: text }
+      - { label: "照片", name: photo, widget: image, required: false }
+
+  # ===== 3. 博客（新内容首发阵地——问句式标题=词序铁律）=====
+  - name: blog
+    label: "博客 (Блог)"
+    folder: content/blog
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    summary: "{{title}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "标题(俄·问句式)", name: title, widget: string, hint: "如: Kak lechat psoriaz v Kitae — 与搜索词一致" }
+      - { label: "slug", name: slug, widget: string, hint: "kak-lechat-<病>-v-kitae" }
+      - { label: "描述(meta)", name: description, widget: string }
+      - { label: "发布日期", name: date, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: "正文", name: body, widget: markdown }
+
+  # ===== 4. 病种页（P1 已建 10 个，后续新增走这里）=====
+  - name: bolezni
+    label: "病种页 (Заболевания)"
+    folder: content/bolezni
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    summary: "{{title}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "H1(俄)", name: title, widget: string, hint: "如: Kak lechat artroz v Kitae" }
+      - { label: "slug", name: slug, widget: string, hint: "kak-lechat-<病>-v-kitae" }
+      - { label: "首段(40-60词·AI可摘取)", name: intro, widget: text }
+      - { label: "疗法(每行一条)", name: methods, widget: list, field: { label: 条目, name: item, widget: string } }
+      - { label: "疗程流程", name: process, widget: text }
+      - { label: "对应程序slug", name: program, widget: string, required: false }
+      - { label: "正文", name: body, widget: markdown, required: false }
+
+  # ===== 5. 分院（三海湾）=====
+  - name: filialy
+    label: "分院 (Филиалы)"
+    folder: content/filialy
+    create: false
+    slug: "{{slug}}"
+    extension: json
+    summary: "{{nameRu}}"
+    fields:
+      - { label: "俄文名", name: nameRu, widget: string }
+      - { label: "英文名", name: nameEn, widget: string }
+      - { label: "slug", name: slug, widget: string }
+      - { label: "特点描述", name: character, widget: text }
+      - { label: "距离描述", name: distance, widget: string }
+      - { label: "标签(每行一条)", name: features, widget: list, field: { label: 条目, name: item, widget: string } }
+
+  # ===== 6. 站点设置（联系方式等）=====
+  - name: settings
+    label: "站点设置"
+    files:
+      - label: "联系方式"
+        name: contacts
+        file: content/settings/contacts.json
+        fields:
+          - { label: "WhatsApp", name: whatsapp, widget: string }
+          - { label: "Telegram", name: telegram, widget: string, required: false }
+          - { label: "邮箱", name: email, widget: string }
+          - { label: "地址(俄)", name: addressRu, widget: string }
