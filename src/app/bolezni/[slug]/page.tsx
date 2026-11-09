@@ -41,8 +41,19 @@ export default async function BoleznPage({ params }: Props) {
     description: b.intro,
     url: `https://www.fenix-sanyamed.com/bolezni/${b.slug}/`,
     about: { "@type": "MedicalCondition", name: b.h1.replace("Как лечат ", "").replace(" в Китае", "") },
-    lastReviewed: "2026-11-07",
+    lastReviewed: "2026-11-09",
   };
+
+  // FAQ structured data（AI 可摘取的最小单元）
+  const faqSchema = b.faq && b.faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: b.faq.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  } : null;
 
   return (
     <main id="main" className="mx-auto max-w-4xl px-4 py-12">
@@ -50,6 +61,12 @@ export default async function BoleznPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       <nav className="mb-6 text-sm text-zinc-500">
         <Link href="/" className="hover:underline">Главная</Link>
@@ -73,10 +90,41 @@ export default async function BoleznPage({ params }: Props) {
         </ul>
       </section>
 
+      {/* 病机观（ТКМ 视角） */}
+      {b.tcmView && (
+        <section className="mb-10">
+          <h2 className="mb-4 text-2xl font-bold">Как это объясняет китайская медицина</h2>
+          <p className="leading-relaxed text-zinc-700">{b.tcmView}</p>
+        </section>
+      )}
+
+      {/* 问句直答（高频搜索问句） */}
+      {b.honest && (
+        <section className="mb-10">
+          <h2 className="mb-4 text-2xl font-bold">Честный ответ на главный вопрос</h2>
+          <p className="leading-relaxed text-zinc-700">{b.honest}</p>
+        </section>
+      )}
+
       <section className="mb-10">
         <h2 className="mb-4 text-2xl font-bold">Как проходит курс</h2>
         <p className="leading-relaxed text-zinc-700">{b.process}</p>
       </section>
+
+      {/* FAQ（可摘取问答，配 JSON-LD） */}
+      {b.faq && b.faq.length > 0 && (
+        <section className="mb-10">
+          <h2 className="mb-4 text-2xl font-bold">Частые вопросы</h2>
+          <div className="space-y-4">
+            {b.faq.map((f) => (
+              <details key={f.q} className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4">
+                <summary className="cursor-pointer font-semibold">{f.q}</summary>
+                <p className="mt-2 leading-relaxed text-zinc-700">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="mb-10">
         <h2 className="mb-4 text-2xl font-bold">Соответствующая программа</h2>
