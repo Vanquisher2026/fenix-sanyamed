@@ -1,12 +1,12 @@
 // Cloudflare Pages Functions — Static CMS 的 GitHub OAuth 网关
 // GET /api/auth?provider=github        → 重定向 GitHub 授权页
-// GET /api/auth/callback?code=xxx      → 换 token → 回 CMS（静态无服务端存储版：token 放 URL fragment 回传）
+// GET /api/auth/callback?code=xxx      → 换 token → 回 CMS（token 放 URL fragment 回传）
 //
-// 环境变量（Pages Settings → Variables）：
-//   GH_CLIENT_ID, GH_CLIENT_SECRET, CMS_SECRET (可选)
+// Client ID 公开无妨（OAuth 标准做法）；Secret 走 env（Pages Settings 绑定）
 
 const GH_AUTHORIZE = "https://github.com/login/oauth/authorize";
 const GH_TOKEN = "https://github.com/login/oauth/access_token";
+const CLIENT_ID = "Ov23lihbRa5f2st5UI1o"; // OAuth App: fenix-cms
 
 function json(data, status = 200) {
   return new Response(JSON.stringify(data), {
@@ -25,7 +25,7 @@ export async function onRequestGet(ctx) {
     const redirectUri = `${url.origin}/api/auth/callback`;
     const state = crypto.randomUUID();
     const p = new URLSearchParams({
-      client_id: env.GH_CLIENT_ID || "",
+      client_id: CLIENT_ID,
       redirect_uri: redirectUri,
       scope: "repo user",
       state,
@@ -38,12 +38,14 @@ export async function onRequestGet(ctx) {
     const code = url.searchParams.get("code");
     if (!code) return json({ error: "no code" }, 400);
     const redirectUri = `${url.origin}/api/auth/callback`;
+    const secret = env.GH_CLIENT_SECRET || env.VAR_GH_CLIENT_SECRET || "";
+    if (!secret) return json({ error: "GH_CLIENT_SECRET not configured" }, 500);
     const r = await fetch(GH_TOKEN, {
       method: "POST",
       headers: { "Content-Type": "application/json", Accept: "application/json" },
       body: JSON.stringify({
-        client_id: env.GH_CLIENT_ID,
-        client_secret: env.GH_CLIENT_SECRET,
+        client_id: CLIENT_ID,
+        client_secret: secret,
         code,
         redirect_uri: redirectUri,
       }),
