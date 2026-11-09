@@ -5,17 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
   <title>ТАЙЦЗИ — Управление контентом</title>
-  <script src="https://unpkg.com/@staticcms/app@^4.0.0/dist/static-cms-app.js"></script>
   <script>
-    // Static CMS（Decap 的现代分支，无需依赖已停止维护的 decap-admin）
-    // GitHub OAuth 走 Functions API（functions/api/auth/）
-    window.CMS.init();
+    // 双 CDN 容灾：jsdelivr 主 + unpkg 备（中国/俄语区可达性优先 jsdelivr）
+    (function () {
+      var loaded = false;
+      var s = document.createElement("script");
+      s.src = "https://cdn.jsdelivr.net/npm/@staticcms/app@4.4.0/dist/static-cms-app.js";
+      s.onload = function () { loaded = true; window.CMS && window.CMS.init(); };
+      s.onerror = function () {
+        var s2 = document.createElement("script");
+        s2.src = "https://unpkg.com/@staticcms/app@4.4.0/dist/static-cms-app.js";
+        s2.onload = function () { loaded = true; window.CMS && window.CMS.init(); };
+        document.head.appendChild(s2);
+      };
+      document.head.appendChild(s);
+    })();
   </script>
   <style>
-    body { margin: 0; background: #0f172a; }
-    /* 登录页 branding 略调 */
+    body { margin: 0; background: #f8fafc; font-family: system-ui, sans-serif; }
+    #cms-loading { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+                   flex-direction: column; gap: 12px; color: #475569; }
+    #cms-loading .spin { width: 32px; height: 32px; border: 3px solid #cbd5e1; border-top-color: #2563eb;
+                         border-radius: 50%; animation: sp 1s linear infinite; }
+    @keyframes sp { to { transform: rotate(360deg); } }
   </style>
 </head>
 <body>
+  <div id="cms-loading"><div class="spin"></div><div>Загрузка панели управления…</div></div>
+  <script>
+    // CMS init 完成后移除 loading（MutationObserver 兜底）
+    new MutationObserver(function () {
+      if (document.querySelector("[id^=tos], .nc-root, [class*=cms]") || (window.CMS && document.body.innerText.length > 50)) {
+        var l = document.getElementById("cms-loading");
+        if (l) l.remove();
+      }
+    }).observe(document.body, { childList: true, subtree: true });
+  </script>
 </body>
 </html>
+

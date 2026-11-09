@@ -2,6 +2,9 @@ backend:
   name: github
   repo: Vanquisher2026/fenix-sanyamed
   branch: main
+  # OAuth 走自有网关（functions/api/auth.js）
+  base_url: https://www.fenix-sanyamed.com
+  auth_endpoint: api/auth
 
 media_folder: public/images/cms
 public_folder: /images/cms

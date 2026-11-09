@@ -38,9 +38,9 @@ const UPDATED = {
   contacts: "2026-10-05",
   enPages: "2026-10-31",
   brand: "2026-10-31",
-  sanya: "2026-11-07",
-  filialy: "2026-11-07",
-  bolezni: "2026-11-07",
+  sanya: "2026-11-03",
+  filialy: "2026-11-05",
+  bolezni: "2026-11-09",
 } as const;
 
 // Блог — нет data-файла, slug'и берутся из структуры каталога src/app/blog/*
