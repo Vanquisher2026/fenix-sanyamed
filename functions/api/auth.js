@@ -22,8 +22,10 @@ export async function onRequestGet(ctx) {
 
   // /api/auth → 起始
   if (path === "/api/auth") {
+    // 忽略 CMS 传入的 redirect_uri/site_id 参数——强制用本网关注册的回调
+    // （GitHub OAuth App 只接受精确匹配的回调 URL）
     const redirectUri = `${url.origin}/api/auth/callback`;
-    const state = crypto.randomUUID();
+    const state = url.searchParams.get("state") || crypto.randomUUID();
     const p = new URLSearchParams({
       client_id: CLIENT_ID,
       redirect_uri: redirectUri,
