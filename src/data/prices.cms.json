@@ -1,0 +1,1250 @@
+[
+  {
+    "group": "",
+    "name": "Аккупунктурный (иглотерапия) лифтинг лица",
+    "nameCn": "美容针灸",
+    "slug": "akkupunkturnyy-igloterapiya-lifting-lica-2",
+    "price": 280,
+    "duration": "20-30 мин"
+  },
+  {
+    "group": "",
+    "name": "Аккупунктурный (иглотерапия) лифтинг лица",
+    "nameCn": "美容针灸",
+    "slug": "akkupunkturnyy-igloterapiya-lifting-lica",
+    "price": 220,
+    "duration": "20-30 мин"
+  },
+  {
+    "group": "",
+    "name": "Акупунктура (иглотерапия)",
+    "nameCn": "针灸",
+    "slug": "akupunktura-igloterapiya",
+    "price": 180,
+    "duration": "30-50 мин"
+  },
+  {
+    "group": "",
+    "name": "Акупунктурный лифтинг лица",
+    "nameCn": "美容针",
+    "slug": "akupunkturnyy-lifting-lica",
+    "price": 220,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Антицеллюлитный комплексный массаж",
+    "nameCn": "减肥套餐",
+    "slug": "anticellyulitnyy-kompleksnyy-massazh-2",
+    "price": 350,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Антицеллюлитный комплексный массаж",
+    "nameCn": "减肥套餐",
+    "slug": "anticellyulitnyy-kompleksnyy-massazh",
+    "price": 280,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Арома и лицо",
+    "nameCn": "香薰护理",
+    "slug": "aroma-i-lico-2",
+    "price": 980,
+    "duration": "5 часа"
+  },
+  {
+    "group": "",
+    "name": "Арома и лицо",
+    "nameCn": "香薰护理",
+    "slug": "aroma-i-lico",
+    "price": 880,
+    "duration": "5 часа"
+  },
+  {
+    "group": "",
+    "name": "Арома и стопы",
+    "nameCn": "香薰水疗",
+    "slug": "aroma-i-stopy-2",
+    "price": 750,
+    "duration": "5 часа"
+  },
+  {
+    "group": "",
+    "name": "Арома и стопы",
+    "nameCn": "香熏水疗",
+    "slug": "aroma-i-stopy-3",
+    "price": 660,
+    "duration": "5 часа"
+  },
+  {
+    "group": "",
+    "name": "Арома и стопы",
+    "nameCn": "香薰水疗",
+    "slug": "aroma-i-stopy",
+    "price": 650,
+    "duration": "5 часа"
+  },
+  {
+    "group": "",
+    "name": "Арома-массаж",
+    "nameCn": "香薰推拿",
+    "slug": "aroma-massazh-2",
+    "price": 500,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Арома-массаж",
+    "nameCn": "香薰推拿",
+    "slug": "aroma-massazh",
+    "price": 400,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Аромамассаж тонизирующий",
+    "nameCn": "大力淋巴排毒精油按摩",
+    "slug": "aromamassazh-toniziruyuschiy",
+    "price": 380,
+    "duration": "70 мин"
+  },
+  {
+    "group": "",
+    "name": "Аромамассаж",
+    "nameCn": "淋巴排毒精油按摩",
+    "slug": "aromamassazh",
+    "price": 380,
+    "duration": "70 мин"
+  },
+  {
+    "group": "",
+    "name": "Ароматерапия",
+    "nameCn": "香熏按摩",
+    "slug": "aromaterapiya",
+    "price": 480,
+    "duration": "5 часа"
+  },
+  {
+    "group": "",
+    "name": "Аурикулотерапия традиционными иглами",
+    "nameCn": "耳针",
+    "slug": "aurikuloterapiya-tradicionnymi-iglami",
+    "price": 120,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Аурикулотерапия ушными кнопками",
+    "nameCn": "耳豆",
+    "slug": "aurikuloterapiya-ushnymi-knopkami",
+    "price": 100,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Биоуход за лицом",
+    "nameCn": "保湿面部护理",
+    "slug": "biouhod-za-licom-2",
+    "price": 450,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Биоуход за лицом",
+    "nameCn": "保湿面部护理",
+    "slug": "biouhod-za-licom",
+    "price": 380,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Царские грезы",
+    "nameCn": "完美感觉",
+    "slug": "carskie-grezy",
+    "price": 1100,
+    "duration": "3 часа"
+  },
+  {
+    "group": "",
+    "name": "Цветочная ванна",
+    "nameCn": "芳香花瓣浴",
+    "slug": "cvetochnaya-vanna",
+    "price": 150,
+    "duration": "20-30 мин"
+  },
+  {
+    "group": "",
+    "name": "Электроаппарат",
+    "nameCn": "电针仪",
+    "slug": "elektroapparat-2",
+    "price": 100,
+    "duration": "30-50 мин"
+  },
+  {
+    "group": "",
+    "name": "Электроаппарат",
+    "nameCn": "电针仪",
+    "slug": "elektroapparat",
+    "price": 180,
+    "duration": "20-30 мин"
+  },
+  {
+    "group": "",
+    "name": "Электроиглоукалывание",
+    "nameCn": "电针仪",
+    "slug": "elektroigloukalyvanie",
+    "price": 180,
+    "duration": "20-30 мин"
+  },
+  {
+    "group": "",
+    "name": "Фруктовое обертывание «Тропическое наслаждение»",
+    "nameCn": "热带岛屿裹肤",
+    "slug": "fruktovoe-obertyvanie-tropicheskoe-naslazhdenie",
+    "price": 380,
+    "duration": "70 мин"
+  },
+  {
+    "group": "",
+    "name": "Фумигационный аппарат китайской народной медицины",
+    "nameCn": "中药熏蒸治疗仪",
+    "slug": "fumigacionnyy-apparat-kitayskoy-narodnoy-mediciny-2",
+    "price": 220,
+    "duration": "30мин"
+  },
+  {
+    "group": "",
+    "name": "Фумигационный аппарат китайской народной медицины",
+    "nameCn": "中药熏蒸治疗仪",
+    "slug": "fumigacionnyy-apparat-kitayskoy-narodnoy-mediciny",
+    "price": 180,
+    "duration": "30мин"
+  },
+  {
+    "group": "",
+    "name": "Фуянгуан",
+    "nameCn": "扶阳罐疗法",
+    "slug": "fuyanguan-2",
+    "price": 220,
+    "duration": "30мин"
+  },
+  {
+    "group": "",
+    "name": "Фуянгуан",
+    "nameCn": "扶阳罐疗法",
+    "slug": "fuyanguan",
+    "price": 180,
+    "duration": "30мин"
+  },
+  {
+    "group": "",
+    "name": "Глубокая регуляция внутренних органов и меридиан",
+    "nameCn": "脏腑/ 带脉深度调理",
+    "slug": "glubokaya-regulyaciya-vnutrennih-organov-i-meridian",
+    "price": 900,
+    "duration": "60-80мин"
+  },
+  {
+    "group": "",
+    "name": "Иглонож",
+    "nameCn": "小针刀",
+    "slug": "iglonozh",
+    "price": 500,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Иглотерапия (акупунктура, иглорефлексотерапия)",
+    "nameCn": "针灸",
+    "slug": "igloterapiya-akupunktura-iglorefleksoterapiya-2",
+    "price": 240,
+    "duration": "30-50 мин"
+  },
+  {
+    "group": "",
+    "name": "Иглотерапия (акупунктура, иглорефлексотерапия)",
+    "nameCn": "针灸",
+    "slug": "igloterapiya-akupunktura-iglorefleksoterapiya",
+    "price": 200,
+    "duration": "30-50 мин"
+  },
+  {
+    "group": "",
+    "name": "Иглотерапия для снижения веса",
+    "nameCn": "减肥针灸",
+    "slug": "igloterapiya-dlya-snizheniya-vesa-2",
+    "price": 240,
+    "duration": "30 мин"
+  },
+  {
+    "group": "",
+    "name": "Иглотерапия для снижения веса",
+    "nameCn": "减肥针灸",
+    "slug": "igloterapiya-dlya-snizheniya-vesa-3",
+    "price": 180,
+    "duration": "30-50 мин"
+  },
+  {
+    "group": "",
+    "name": "Иглотерапия для снижения веса",
+    "nameCn": "减肥针灸",
+    "slug": "igloterapiya-dlya-snizheniya-vesa",
+    "price": 200,
+    "duration": "30 мин"
+  },
+  {
+    "group": "",
+    "name": "Имплантация кетгута",
+    "nameCn": "埋线",
+    "slug": "implantaciya-ketguta",
+    "price": 1500,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Капсула-релакс с душем",
+    "nameCn": "蒸气浴",
+    "slug": "kapsula-relaks-s-dushem",
+    "price": 100,
+    "duration": "20-30 мин"
+  },
+  {
+    "group": "",
+    "name": "Китайские банки с кровопусканием",
+    "nameCn": "放血疗法（单部位）",
+    "slug": "kitayskie-banki-s-krovopuskaniem-2",
+    "price": 300,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Китайские банки с кровопусканием",
+    "nameCn": "放血疗法（单部位）",
+    "slug": "kitayskie-banki-s-krovopuskaniem",
+    "price": 200,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Китайский педикюр",
+    "nameCn": "中式足部修护",
+    "slug": "kitayskiy-pedikyur-2",
+    "price": 280,
+    "duration": "30 мин"
+  },
+  {
+    "group": "",
+    "name": "Китайский педикюр",
+    "nameCn": "中式足部修护",
+    "slug": "kitayskiy-pedikyur-3",
+    "price": 150,
+    "duration": "30 мин"
+  },
+  {
+    "group": "",
+    "name": "Китайский педикюр",
+    "nameCn": "中式足部修护",
+    "slug": "kitayskiy-pedikyur",
+    "price": 200,
+    "duration": "30 мин"
+  },
+  {
+    "group": "",
+    "name": "Комплекс для ног с имбирем",
+    "nameCn": "足部姜疗",
+    "slug": "kompleks-dlya-nog-s-imbirem",
+    "price": 280,
+    "duration": "90 мин"
+  },
+  {
+    "group": "",
+    "name": "Комплексный уход за лицом",
+    "nameCn": "焕颜防衰护理",
+    "slug": "kompleksnyy-uhod-za-licom-2",
+    "price": 450,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Комплексный уход за лицом",
+    "nameCn": "焕颜防衰护理",
+    "slug": "kompleksnyy-uhod-za-licom",
+    "price": 380,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Комплексный уход за ногами",
+    "nameCn": "足部及小腿部护理",
+    "slug": "kompleksnyy-uhod-za-nogami",
+    "price": 240,
+    "duration": "90 мин"
+  },
+  {
+    "group": "",
+    "name": "Коррекция осанки у детей",
+    "nameCn": "小儿肢体矫正",
+    "slug": "korrekciya-osanki-u-detey-2",
+    "price": 300,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Коррекция осанки у детей",
+    "nameCn": "小儿肢体矫正",
+    "slug": "korrekciya-osanki-u-detey",
+    "price": 200,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Лечебный массаж",
+    "nameCn": "中医治疗推拿",
+    "slug": "lechebnyy-massazh-2",
+    "price": 350,
+    "duration": "45 мин"
+  },
+  {
+    "group": "",
+    "name": "Лечебный массаж",
+    "nameCn": "治疗按摩",
+    "slug": "lechebnyy-massazh-3",
+    "price": 200,
+    "duration": "40 мин"
+  },
+  {
+    "group": "",
+    "name": "Лечебный массаж груди",
+    "nameCn": "乳腺保养",
+    "slug": "lechebnyy-massazh-grudi-2",
+    "price": 550,
+    "duration": "45мин"
+  },
+  {
+    "group": "",
+    "name": "Лечебный массаж груди",
+    "nameCn": "乳腺保养",
+    "slug": "lechebnyy-massazh-grudi",
+    "price": 500,
+    "duration": "45мин"
+  },
+  {
+    "group": "",
+    "name": "Лечебный массаж",
+    "nameCn": "中医治疗推拿",
+    "slug": "lechebnyy-massazh",
+    "price": 280,
+    "duration": "45 мин"
+  },
+  {
+    "group": "",
+    "name": "Лифтинг век и губ",
+    "nameCn": "眼唇部护理",
+    "slug": "lifting-vek-i-gub",
+    "price": 200,
+    "duration": "40 мин"
+  },
+  {
+    "group": "",
+    "name": "Лимфодренаж",
+    "nameCn": "淋巴疏通调理",
+    "slug": "limfodrenazh-2",
+    "price": 320,
+    "duration": "30мин"
+  },
+  {
+    "group": "",
+    "name": "Лимфодренаж",
+    "nameCn": "淋巴疏通调理",
+    "slug": "limfodrenazh",
+    "price": 250,
+    "duration": "30мин"
+  },
+  {
+    "group": "",
+    "name": "Массаж четырьмя руками: 1. Увлажнение и питание кожи лица + травяная ванна и массаж ступней + 2. Аромамассаж + травяная ванна и массаж ступней +",
+    "nameCn": "四只手按摩",
+    "slug": "massazh-chetyrmya-rukami-1-uvlazhnenie-i-pitanie-kozhi-lica-",
+    "price": 550,
+    "duration": "70 мин"
+  },
+  {
+    "group": "",
+    "name": "Массаж головы",
+    "nameCn": "精油拨筋头疗",
+    "slug": "massazh-golovy-2",
+    "price": 300,
+    "duration": "30 мин"
+  },
+  {
+    "group": "",
+    "name": "Массаж головы",
+    "nameCn": "头部按摩",
+    "slug": "massazh-golovy-3",
+    "price": 100,
+    "duration": "20мин"
+  },
+  {
+    "group": "",
+    "name": "Массаж головы",
+    "nameCn": "精油拨筋头疗",
+    "slug": "massazh-golovy",
+    "price": 200,
+    "duration": "30 мин"
+  },
+  {
+    "group": "",
+    "name": "Массаж простаты для мужчин",
+    "nameCn": "前列腺调理",
+    "slug": "massazh-prostaty-dlya-muzhchin-2",
+    "price": 550,
+    "duration": "45мин"
+  },
+  {
+    "group": "",
+    "name": "Массаж простаты для мужчин",
+    "nameCn": "前列腺调理",
+    "slug": "massazh-prostaty-dlya-muzhchin",
+    "price": 500,
+    "duration": "45мин"
+  },
+  {
+    "group": "",
+    "name": "Массаж ступней рогом сайги",
+    "nameCn": "羚羊角足底",
+    "slug": "massazh-stupney-rogom-saygi",
+    "price": 200,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Массаж точечный и по меридианам всего тела",
+    "nameCn": "太极经络养生",
+    "slug": "massazh-tochechnyy-i-po-meridianam-vsego-tela-2",
+    "price": 300,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Массаж точечный и по меридианам всего тела",
+    "nameCn": "穴位按摩",
+    "slug": "massazh-tochechnyy-i-po-meridianam-vsego-tela-3",
+    "price": 140,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Массаж точечный и по меридианам всего тела",
+    "nameCn": "太极经络养生",
+    "slug": "massazh-tochechnyy-i-po-meridianam-vsego-tela",
+    "price": 200,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Методика ударно-волновой терапии",
+    "nameCn": "冲击波治疗仪",
+    "slug": "metodika-udarno-volnovoy-terapii-2",
+    "price": 200,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Методика ударно-волновой терапии",
+    "nameCn": "冲击波治疗仪",
+    "slug": "metodika-udarno-volnovoy-terapii",
+    "price": 150,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Мини-комплекс для лица с применением аппарата",
+    "nameCn": "面部精华素导入",
+    "slug": "mini-kompleks-dlya-lica-s-primeneniem-apparata",
+    "price": 150,
+    "duration": "30 мин"
+  },
+  {
+    "group": "",
+    "name": "Моксотерапия активных точек организма -",
+    "nameCn": "穴位艾灸",
+    "slug": "moksoterapiya-aktivnyh-tochek-organizma-2",
+    "price": 180,
+    "duration": "20 мин"
+  },
+  {
+    "group": "",
+    "name": "Моксотерапия активных точек организма -",
+    "nameCn": "穴位艾灸",
+    "slug": "moksoterapiya-aktivnyh-tochek-organizma",
+    "price": 120,
+    "duration": "20 мин"
+  },
+  {
+    "group": "",
+    "name": "Моксотерапия «Кость Дракона Фу Ян»",
+    "nameCn": "扶阳龙骨灸",
+    "slug": "moksoterapiya-kost-drakona-fu-yan-2",
+    "price": 700,
+    "duration": "90-120мин"
+  },
+  {
+    "group": "",
+    "name": "Моксотерапия «Кость Дракона Фу Ян»",
+    "nameCn": "扶阳龙骨灸",
+    "slug": "moksoterapiya-kost-drakona-fu-yan",
+    "price": 680,
+    "duration": "90-120мин"
+  },
+  {
+    "group": "",
+    "name": "Моксотерапия по части организма -",
+    "nameCn": "局部艾灸",
+    "slug": "moksoterapiya-po-chasti-organizma-2",
+    "price": 200,
+    "duration": "30мин"
+  },
+  {
+    "group": "",
+    "name": "Моксотерапия по части организма -",
+    "nameCn": "局部艾灸",
+    "slug": "moksoterapiya-po-chasti-organizma",
+    "price": 150,
+    "duration": "30мин"
+  },
+  {
+    "group": "",
+    "name": "Нанесение лекарственных препаратов китайской традиционной медицины + лечебные согревающие компрессы +",
+    "nameCn": "中药导入",
+    "slug": "nanesenie-lekarstvennyh-preparatov-kitayskoy-tradicionnoy-me-2",
+    "price": 520,
+    "duration": "60мин"
+  },
+  {
+    "group": "",
+    "name": "Нанесение лекарственных препаратов китайской традиционной медицины + лечебные согревающие компрессы +",
+    "nameCn": "中药导入",
+    "slug": "nanesenie-lekarstvennyh-preparatov-kitayskoy-tradicionnoy-me",
+    "price": 480,
+    "duration": "60мин"
+  },
+  {
+    "group": "",
+    "name": "Очищающая процедура с использованием ушных арома-свеч",
+    "nameCn": "香薰耳烛",
+    "slug": "ochischayuschaya-procedura-s-ispolzovaniem-ushnyh-aroma-svec-2",
+    "price": 500,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Очищающая процедура с использованием ушных арома-свеч",
+    "nameCn": "香熏耳烛",
+    "slug": "ochischayuschaya-procedura-s-ispolzovaniem-ushnyh-aroma-svec-3",
+    "price": 380,
+    "duration": "70 мин"
+  },
+  {
+    "group": "",
+    "name": "Очищающая процедура с использованием ушных арома-свеч",
+    "nameCn": "香薰耳烛",
+    "slug": "ochischayuschaya-procedura-s-ispolzovaniem-ushnyh-aroma-svec",
+    "price": 400,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Огненный массаж",
+    "nameCn": "火疗",
+    "slug": "ognennyy-massazh-2",
+    "price": 340,
+    "duration": "45 мин"
+  },
+  {
+    "group": "",
+    "name": "Огненный массаж",
+    "nameCn": "火疗",
+    "slug": "ognennyy-massazh-3",
+    "price": 280,
+    "duration": "20-30 мин"
+  },
+  {
+    "group": "",
+    "name": "Огненный массаж",
+    "nameCn": "火疗",
+    "slug": "ognennyy-massazh",
+    "price": 300,
+    "duration": "45 мин"
+  },
+  {
+    "group": "",
+    "name": "Оздоровительный массаж",
+    "nameCn": "养生按摩",
+    "slug": "ozdorovitelnyy-massazh-2",
+    "price": 550,
+    "duration": "2 часа"
+  },
+  {
+    "group": "",
+    "name": "Оздоровительный массаж",
+    "nameCn": "养生按摩",
+    "slug": "ozdorovitelnyy-massazh-3",
+    "price": 390,
+    "duration": "5 часа"
+  },
+  {
+    "group": "",
+    "name": "Оздоровительный массаж",
+    "nameCn": "养生按摩",
+    "slug": "ozdorovitelnyy-massazh",
+    "price": 450,
+    "duration": "2 часа"
+  },
+  {
+    "group": "",
+    "name": "Поддержание здоровья при помощи восстановления циркуляции энергии Ци",
+    "nameCn": "气渗疗法",
+    "slug": "podderzhanie-zdorovya-pri-pomoschi-vosstanovleniya-cirkulyac-2",
+    "price": 220,
+    "duration": "30мин"
+  },
+  {
+    "group": "",
+    "name": "Поддержание здоровья при помощи восстановления циркуляции энергии Ци",
+    "nameCn": "气渗疗法",
+    "slug": "podderzhanie-zdorovya-pri-pomoschi-vosstanovleniya-cirkulyac",
+    "price": 180,
+    "duration": "30мин"
+  },
+  {
+    "group": "",
+    "name": "Послеродовое восстановление",
+    "nameCn": "骨盆及产后修复",
+    "slug": "poslerodovoe-vosstanovlenie-2",
+    "price": 620,
+    "duration": "90мин"
+  },
+  {
+    "group": "",
+    "name": "Послеродовое восстановление",
+    "nameCn": "骨盆及产后修复",
+    "slug": "poslerodovoe-vosstanovlenie",
+    "price": 580,
+    "duration": "90мин"
+  },
+  {
+    "group": "",
+    "name": "Прижигание глиной (на основе целебных лекарственных препаратов китайской традиционной медицины)",
+    "nameCn": "中草药泥灸",
+    "slug": "prizhiganie-glinoy-na-osnove-celebnyh-lekarstvennyh-preparat-2",
+    "price": 240,
+    "duration": "10-20мин"
+  },
+  {
+    "group": "",
+    "name": "Прижигание глиной (на основе целебных лекарственных препаратов китайской традиционной медицины)",
+    "nameCn": "中草药泥灸",
+    "slug": "prizhiganie-glinoy-na-osnove-celebnyh-lekarstvennyh-preparat",
+    "price": 180,
+    "duration": "10-20мин"
+  },
+  {
+    "group": "",
+    "name": "Прижигание моксом",
+    "nameCn": "中药局部熏蒸",
+    "slug": "prizhiganie-moksom-2",
+    "price": 220,
+    "duration": "20-30мин"
+  },
+  {
+    "group": "",
+    "name": "Прижигание моксом",
+    "nameCn": "中药局部熏蒸",
+    "slug": "prizhiganie-moksom",
+    "price": 180,
+    "duration": "20-30мин"
+  },
+  {
+    "group": "",
+    "name": "Прижигание (прогревание) полынными сигарами",
+    "nameCn": "古法悬灸（辩证、配穴）",
+    "slug": "prizhiganie-progrevanie-polynnymi-sigarami-2",
+    "price": 240,
+    "duration": "30мин"
+  },
+  {
+    "group": "",
+    "name": "Прижигание (прогревание) полынными сигарами",
+    "nameCn": "艾灸",
+    "slug": "prizhiganie-progrevanie-polynnymi-sigarami-3",
+    "price": 90,
+    "duration": "30 мин"
+  },
+  {
+    "group": "",
+    "name": "Прижигание (прогревание) полынными сигарами",
+    "nameCn": "古法悬灸（辩证、配穴）",
+    "slug": "prizhiganie-progrevanie-polynnymi-sigarami",
+    "price": 190,
+    "duration": "30мин"
+  },
+  {
+    "group": "",
+    "name": "Профессиональное лечение (лечебные масла)",
+    "nameCn": "专家治疗调理",
+    "slug": "professionalnoe-lechenie-lechebnye-masla-2",
+    "price": 480,
+    "duration": "45мин"
+  },
+  {
+    "group": "",
+    "name": "Профессиональное лечение (лечебные масла)",
+    "nameCn": "专家治疗调理",
+    "slug": "professionalnoe-lechenie-lechebnye-masla",
+    "price": 380,
+    "duration": "45мин"
+  },
+  {
+    "group": "",
+    "name": "Прогревание фуянгуан",
+    "nameCn": "扶阳垫热灸",
+    "slug": "progrevanie-fuyanguan-2",
+    "price": 220,
+    "duration": "30 мин"
+  },
+  {
+    "group": "",
+    "name": "Прогревание фуянгуан",
+    "nameCn": "扶阳垫热灸",
+    "slug": "progrevanie-fuyanguan",
+    "price": 180,
+    "duration": "30 мин"
+  },
+  {
+    "group": "",
+    "name": "Прогревание с помощью инфракрасных лучей",
+    "nameCn": "红外线治疗仪",
+    "slug": "progrevanie-s-pomoschyu-infrakrasnyh-luchey-2",
+    "price": 150,
+    "duration": "20-30мин"
+  },
+  {
+    "group": "",
+    "name": "Прогревание с помощью инфракрасных лучей",
+    "nameCn": "红外线治疗仪",
+    "slug": "progrevanie-s-pomoschyu-infrakrasnyh-luchey-3",
+    "price": 90,
+    "duration": "20 мин"
+  },
+  {
+    "group": "",
+    "name": "Прогревание с помощью инфракрасных лучей",
+    "nameCn": "红外线治疗仪",
+    "slug": "progrevanie-s-pomoschyu-infrakrasnyh-luchey",
+    "price": 100,
+    "duration": "20-30мин"
+  },
+  {
+    "group": "",
+    "name": "Пульсовая диагностика",
+    "nameCn": "诊断",
+    "slug": "pulsovaya-diagnostika-2",
+    "price": 80,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Пульсовая диагностика",
+    "nameCn": "老中医诊脉",
+    "slug": "pulsovaya-diagnostika",
+    "price": 50,
+    "duration": "15-30мин"
+  },
+  {
+    "group": "",
+    "name": "Скобление «Гуаша»",
+    "nameCn": "刮痧",
+    "slug": "skoblenie-guasha-2",
+    "price": 150,
+    "duration": "15-20 мин"
+  },
+  {
+    "group": "",
+    "name": "Скобление «Гуаша»",
+    "nameCn": "刮痧",
+    "slug": "skoblenie-guasha",
+    "price": 90,
+    "duration": "15-20 мин"
+  },
+  {
+    "group": "",
+    "name": "Скраб морской солью",
+    "nameCn": "海盐去角质",
+    "slug": "skrab-morskoy-solyu-2",
+    "price": 500,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Скраб морской солью",
+    "nameCn": "海盐去角质护理",
+    "slug": "skrab-morskoy-solyu-3",
+    "price": 380,
+    "duration": "70 мин"
+  },
+  {
+    "group": "",
+    "name": "Скраб морской солью",
+    "nameCn": "海盐去角质",
+    "slug": "skrab-morskoy-solyu",
+    "price": 400,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Скраб",
+    "nameCn": "去角质护理",
+    "slug": "skrab",
+    "price": 380,
+    "duration": "70 мин"
+  },
+  {
+    "group": "",
+    "name": "Скребковый массаж стоп \\",
+    "nameCn": "足底刮痧",
+    "slug": "skrebkovyy-massazh-stop-guasha",
+    "price": 200,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Spa-комплекс для мужчин «Царские Грезы»",
+    "nameCn": "完美感觉",
+    "slug": "spa-kompleks-dlya-muzhchin-carskie-grezy-2",
+    "price": 1300,
+    "duration": "3 часа"
+  },
+  {
+    "group": "",
+    "name": "Spa-комплекс для мужчин «Царские Грезы»",
+    "nameCn": "完美感觉",
+    "slug": "spa-kompleks-dlya-muzhchin-carskie-grezy",
+    "price": 1100,
+    "duration": "3 часа"
+  },
+  {
+    "group": "",
+    "name": "Spa-комплекс для женщин «Услада Царицы»",
+    "nameCn": "奇妙感觉",
+    "slug": "spa-kompleks-dlya-zhenschin-uslada-caricy-2",
+    "price": 1300,
+    "duration": "3 часа"
+  },
+  {
+    "group": "",
+    "name": "Spa-комплекс для женщин «Услада Царицы»",
+    "nameCn": "奇妙感觉",
+    "slug": "spa-kompleks-dlya-zhenschin-uslada-caricy",
+    "price": 1100,
+    "duration": "3 часа"
+  },
+  {
+    "group": "",
+    "name": "Стоун-терапия",
+    "nameCn": "热石按摩",
+    "slug": "stoun-terapiya",
+    "price": 380,
+    "duration": "70 мин"
+  },
+  {
+    "group": "",
+    "name": "Таргетная терапия китайской традиционной медицины",
+    "nameCn": "中医定向透药疗法",
+    "slug": "targetnaya-terapiya-kitayskoy-tradicionnoy-mediciny-2",
+    "price": 220,
+    "duration": "20 мин"
+  },
+  {
+    "group": "",
+    "name": "Таргетная терапия китайской традиционной медицины",
+    "nameCn": "中医定向透药疗法",
+    "slug": "targetnaya-terapiya-kitayskoy-tradicionnoy-mediciny",
+    "price": 180,
+    "duration": "20 мин"
+  },
+  {
+    "group": "",
+    "name": "Терапия после солнечного ожога",
+    "nameCn": "晒后修复",
+    "slug": "terapiya-posle-solnechnogo-ozhoga-2",
+    "price": 500,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Терапия после солнечного ожога",
+    "nameCn": "晒后修复",
+    "slug": "terapiya-posle-solnechnogo-ozhoga-3",
+    "price": 380,
+    "duration": "70 мин"
+  },
+  {
+    "group": "",
+    "name": "Терапия после солнечного ожога",
+    "nameCn": "晒后修复",
+    "slug": "terapiya-posle-solnechnogo-ozhoga",
+    "price": 400,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Традиционная терапия Цзун Цинь",
+    "nameCn": "师承宗筋疗法",
+    "slug": "tradicionnaya-terapiya-czun-cin",
+    "price": 580,
+    "duration": "60мин"
+  },
+  {
+    "group": "",
+    "name": "Травяная инъекция",
+    "nameCn": "穴位注射",
+    "slug": "travyanaya-inekciya-2",
+    "price": 150,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Травяная инъекция",
+    "nameCn": "穴位注射",
+    "slug": "travyanaya-inekciya",
+    "price": 180,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Травяная ванна и массаж ступней",
+    "nameCn": "太极足部养生",
+    "slug": "travyanaya-vanna-i-massazh-stupney-2",
+    "price": 350,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Травяная ванна и массаж ступней",
+    "nameCn": "足部养生",
+    "slug": "travyanaya-vanna-i-massazh-stupney-3",
+    "price": 130,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Травяная ванна и массаж ступней",
+    "nameCn": "太极足部养生",
+    "slug": "travyanaya-vanna-i-massazh-stupney",
+    "price": 150,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Травяное глинолечение с прогреванием",
+    "nameCn": "药敷",
+    "slug": "travyanoe-glinolechenie-s-progrevaniem-2",
+    "price": 240,
+    "duration": "20-30 мин"
+  },
+  {
+    "group": "",
+    "name": "Травяное глинолечение с прогреванием",
+    "nameCn": "药敷",
+    "slug": "travyanoe-glinolechenie-s-progrevaniem",
+    "price": 180,
+    "duration": "20-30 мин"
+  },
+  {
+    "group": "",
+    "name": "Услада царицы",
+    "nameCn": "奇妙感觉",
+    "slug": "uslada-caricy",
+    "price": 1100,
+    "duration": "3 часа"
+  },
+  {
+    "group": "",
+    "name": "Увлажнение и питание кожи лица",
+    "nameCn": "植物软膜面部护理",
+    "slug": "uvlazhnenie-i-pitanie-kozhi-lica",
+    "price": 280,
+    "duration": "70 мин"
+  },
+  {
+    "group": "",
+    "name": "Вакуум-терапия",
+    "nameCn": "火罐",
+    "slug": "vakuum-terapiya-2",
+    "price": 90,
+    "duration": "20-30 мин"
+  },
+  {
+    "group": "",
+    "name": "Вакуум -терапия",
+    "nameCn": "火罐",
+    "slug": "vakuum-terapiya",
+    "price": 150,
+    "duration": "15-20 мин"
+  },
+  {
+    "group": "",
+    "name": "Ванна с целебными травами",
+    "nameCn": "药浴",
+    "slug": "vanna-s-celebnymi-travami",
+    "price": 190,
+    "duration": "20-30 мин"
+  },
+  {
+    "group": "",
+    "name": "Ванна с кокосовым молоком",
+    "nameCn": "椰奶沐浴",
+    "slug": "vanna-s-kokosovym-molokom",
+    "price": 150,
+    "duration": "20-30 мин"
+  },
+  {
+    "group": "",
+    "name": "Ванна с зеленым чаем и лаймом",
+    "nameCn": "绿茶沐浴",
+    "slug": "vanna-s-zelenym-chaem-i-laymom",
+    "price": 150,
+    "duration": "20-30 мин"
+  },
+  {
+    "group": "",
+    "name": "«Вивафан»",
+    "nameCn": "威伐光治疗仪",
+    "slug": "vivafan-2",
+    "price": 260,
+    "duration": "30 мин"
+  },
+  {
+    "group": "",
+    "name": "«Вивафан»",
+    "nameCn": "威伐光治疗仪",
+    "slug": "vivafan",
+    "price": 200,
+    "duration": "30 мин"
+  },
+  {
+    "group": "",
+    "name": "Водорослевое обертывание «Дары Моря»",
+    "nameCn": "海藻体膜",
+    "slug": "vodoroslevoe-obertyvanie-dary-morya-2",
+    "price": 500,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Водорослевое обертывание «Дары моря»",
+    "nameCn": "海藻体莫",
+    "slug": "vodoroslevoe-obertyvanie-dary-morya-3",
+    "price": 380,
+    "duration": "70 мин"
+  },
+  {
+    "group": "",
+    "name": "Водорослевое обертывание «Дары Моря»",
+    "nameCn": "海藻体膜",
+    "slug": "vodoroslevoe-obertyvanie-dary-morya",
+    "price": 400,
+    "duration": "60 мин"
+  },
+  {
+    "group": "",
+    "name": "Восстановление кожи рук",
+    "nameCn": "手部护理",
+    "slug": "vosstanovlenie-kozhi-ruk",
+    "price": 280,
+    "duration": "70 мин"
+  },
+  {
+    "group": "",
+    "name": "Восстановление кожи шеи",
+    "nameCn": "颈部护理",
+    "slug": "vosstanovlenie-kozhi-shei",
+    "price": 180,
+    "duration": "30 мин"
+  },
+  {
+    "group": "",
+    "name": "Восстановление равновесия пяти стихий всего организма",
+    "nameCn": "五行平衡调理",
+    "slug": "vosstanovlenie-ravnovesiya-pyati-stihiy-vsego-organizma-2",
+    "price": 650,
+    "duration": "5 часа"
+  },
+  {
+    "group": "",
+    "name": "Восстановление равновесия пяти стихий всего организма",
+    "nameCn": "五行平衡调理",
+    "slug": "vosstanovlenie-ravnovesiya-pyati-stihiy-vsego-organizma",
+    "price": 550,
+    "duration": "5 часа"
+  },
+  {
+    "group": "",
+    "name": "Восстановление волос лечебными травами китайской традиционной медицины",
+    "nameCn": "中草药养发护理",
+    "slug": "vosstanovlenie-volos-lechebnymi-travami-kitayskoy-tradicionn-2",
+    "price": 200,
+    "duration": "45-60 мин"
+  },
+  {
+    "group": "",
+    "name": "Восстановление волос лечебными травами китайской традиционной медицины",
+    "nameCn": "中草药养发护理",
+    "slug": "vosstanovlenie-volos-lechebnymi-travami-kitayskoy-tradicionn",
+    "price": 150,
+    "duration": "45-60 мин"
+  },
+  {
+    "group": "",
+    "name": "Вправление костей и коррекция осанки (время сеанса зависит от места заболевания и состояния пациента)",
+    "nameCn": "正骨及形体矫正",
+    "slug": "vpravlenie-kostey-i-korrekciya-osanki-vremya-seansa-zavisit-",
+    "price": 500,
+    "duration": ""
+  },
+  {
+    "group": "",
+    "name": "Вправление шейного отдела позвоночника",
+    "nameCn": "颈椎牵引",
+    "slug": "vpravlenie-sheynogo-otdela-pozvonochnika-2",
+    "price": 100,
+    "duration": "20мин"
+  },
+  {
+    "group": "",
+    "name": "Вправление шейного отдела позвоночника",
+    "nameCn": "颈椎牵引",
+    "slug": "vpravlenie-sheynogo-otdela-pozvonochnika",
+    "price": 50,
+    "duration": "20мин"
+  },
+  {
+    "group": "",
+    "name": "Защита яичников",
+    "nameCn": "卵巢保养",
+    "slug": "zaschita-yaichnikov-2",
+    "price": 550,
+    "duration": "45мин"
+  },
+  {
+    "group": "",
+    "name": "Защита яичников",
+    "nameCn": "卵巢保养",
+    "slug": "zaschita-yaichnikov",
+    "price": 500,
+    "duration": "45мин"
+  }
+]

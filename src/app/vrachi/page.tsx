@@ -119,7 +119,7 @@ export default function VrachiPage() {
             Профили врачей — подробно об образовании и опыте
           </h2>
           <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-            {VRACHI.map((v) => (
+            {[...VRACHI].sort((a, b) => (a.status === "archive" ? 1 : 0) - (b.status === "archive" ? 1 : 0)).map((v) => (
               <li key={v.slug}>
                 <Link
                   href={`/vrachi/${v.slug}/`}
@@ -128,7 +128,7 @@ export default function VrachiPage() {
                   {v.nameRu} ({v.nameCn})
                 </Link>
                 <span className="text-sm text-zinc-500">
-                  {" "}— {v.position}, опыт {v.experienceYears} лет
+                  {" "}— {v.position}, опыт {v.experienceYears} лет{v.status === "archive" ? " · ранее работал в центре" : ""}
                 </span>
               </li>
             ))}

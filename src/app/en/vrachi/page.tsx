@@ -39,10 +39,10 @@ export default function EnVrachiPage() {
         <div className="divider-double" />
       </div>
 
-      {/* === 8 DOCTORS === */}
+      {/* === DOCTORS (active team first, archive below) === */}
       <section className="mx-auto max-w-6xl">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          {VRACHI_EN.map((v, idx) => (
+          {[...VRACHI_EN].sort((a, b) => (a.status === "archive" ? 1 : 0) - (b.status === "archive" ? 1 : 0)).map((v, idx) => (
             <Link
               key={v.slug}
               href={`/en/vrachi/${v.slug}/`}
@@ -59,6 +59,11 @@ export default function EnVrachiPage() {
               <p className="mb-3 font-serif text-base italic text-[var(--primary)]">
                 {v.position}
               </p>
+              {v.status === "archive" && (
+                <p className="mb-2 font-ui text-xs text-zinc-400">
+                  Previously practiced at the center — archival profile
+                </p>
+              )}
               <p className="mb-4 font-serif leading-relaxed text-zinc-700">
                 {v.description}
               </p>

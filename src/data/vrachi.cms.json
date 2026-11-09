@@ -1,10 +1,66 @@
 [
   {
+    "nameRu": "Чжан Ли Ин",
+    "slug": "chzhan-li-in",
+    "spec": "",
+    "exp": 0,
+    "bio": "",
+    "status": "archive"
+  },
+  {
+    "nameRu": "Ху Юэмэй",
+    "slug": "khu-yumei",
+    "spec": "",
+    "exp": 0,
+    "bio": "",
+    "status": "archive"
+  },
+  {
+    "nameRu": "Ху Юн Хун",
+    "slug": "khu-yun-khun",
+    "spec": "",
+    "exp": 0,
+    "bio": "",
+    "status": "archive"
+  },
+  {
+    "nameRu": "Ли Юн Фан",
+    "slug": "li-yun-fan",
+    "spec": "",
+    "exp": 0,
+    "bio": "",
+    "status": "archive"
+  },
+  {
+    "nameRu": "Ло Чжи Жэнь",
+    "slug": "lo-chzhi-zhen",
+    "spec": "",
+    "exp": 0,
+    "bio": "",
+    "status": "archive"
+  },
+  {
+    "nameRu": "Се Ли Цюнь",
+    "slug": "se-li-tsyun",
+    "spec": "",
+    "exp": 0,
+    "bio": "",
+    "status": "archive"
+  },
+  {
     "nameRu": "Сунь Вэньсюэ",
     "slug": "sun-vensyue",
     "spec": "иглотерапия, ортопедия и реабилитация, позвоночник и суставы",
     "exp": 40,
     "bio": "Заместитель главного врача, врач высшей категории. 40 лет клинической практики: иглотерапия, ортопедия и реабилитация."
+  },
+  {
+    "nameRu": "Цзя Фэн Цзян",
+    "slug": "tszya-fen-tszyan",
+    "spec": "",
+    "exp": 0,
+    "bio": "",
+    "status": "archive"
   },
   {
     "nameRu": "Юй Сихай",
@@ -26,5 +82,13 @@
     "spec": "иглотерапия, моксотерапия, травяная фитотерапия, ортопедия и реабилитация",
     "exp": 43,
     "bio": "Главный врач центра, врач высшей категории. 43 года практики: иглотерапия, моксотерапия, фитотерапия, реабилитация."
+  },
+  {
+    "nameRu": "Яо Дун Юань",
+    "slug": "yao-dun-yuan",
+    "spec": "",
+    "exp": 0,
+    "bio": "",
+    "status": "archive"
   }
 ]

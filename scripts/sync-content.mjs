@@ -86,6 +86,7 @@ function renderDoctors() {
     achievements: ${JSON.stringify((Array.isArray(j.achievements) ? j.achievements : []).filter(Boolean))},
     cabLocation: ${JSON.stringify(j.cabLocation || { bukhta: "Дадунхай", hotel: "Медицинский центр ТАЙЦЗИ", floor: "1 этаж" })},
     detailedBio: ${JSON.stringify(j.detailedBio || j.bio || "")},
+    status: ${JSON.stringify(j.status || "active")},
   },`).join("\n");
 
   const ts = `// ============================================================================
@@ -111,6 +112,7 @@ export type Vrach = {
   teacher?: string;
   militaryExperience?: string;
   internationalExperience?: string;
+  status?: "active" | "archive"; // archive = 前团队成员（页面保留，收录权重不丢）
 };
 
 export const VRACHI: Vrach[] = [
@@ -129,6 +131,108 @@ export function getVrachBySlug(slug: string): Vrach | undefined {
   }
 }
 
+// ---------- 2c) 英文版 vrachi.en.ts 同步生成 ----------
+function renderDoctorsEn() {
+  const dir = join(CONTENT, "doctors");
+  if (!existsSync(dir)) return;
+  const items = [];
+  for (const f of readdirSync(dir).filter((x) => x.endsWith(".json"))) {
+    try {
+      const j = JSON.parse(readFileSync(join(dir, f), "utf-8"));
+      if (j.nameRu && j.slug) items.push(j);
+    } catch {}
+  }
+  if (!items.length) return;
+  const specEn = (j) =>
+    Array.isArray(j.specEn)
+      ? j.specEn
+      : String(j.spec || "")
+          .split(/,\s*/)
+          .filter(Boolean)
+          .map((s) =>
+            s.replace("иглотерапия", "acupuncture")
+             .replace("иглорефлексотерапия", "acupuncture")
+             .replace("моксотерапия", "moxibustion")
+             .replace("ортопедия и реабилитация", "orthopedics and rehabilitation")
+             .replace("терапия внутренних органов", "internal organ therapy")
+             .replace("гастроэнтерология ТКМ", "TCM gastroenterology")
+             .replace("очищающие программы", "cleansing programs")
+             .replace("травяная фитотерапия", "herbal medicine")
+             .replace("китайский точечный массаж", "Chinese acupressure")
+             .replace("позвоночник и суставы", "spine and joints")
+          );
+  const nameEn = (j) => j.nameEn || translit(j.nameRu);
+  function translit(ru) {
+    const map = {
+      Сунь: "Sun", Вэньсюэ: "Wenxue", Юй: "Yu", Сихай: "Xihai",
+      Ван: "Wang", Цзюньхай: "Junhai", Лимин: "Limin",
+      Ли: "Li", Юн: "Yun", Фан: "Fang", Чжан: "Zhang", Ин: "Ying",
+      Яо: "Yao", Дун: "Dun", Юань: "Yuan", Се: "Xie", Цюнь: "Qun",
+      Ху: "Hu", Кху: "Hu", Цзя: "Jia", Фэн: "Feng", Цзян: "Jiang",
+      Юэмэй: "Yuemei", Ло: "Luo", Чжи: "Zhi", Жэнь: "Ren",
+    };
+    return ru.split(/\s+/).map((w) => map[w] || w).join(" ");
+  }
+  const exp = (j) => Number(j.exp) || Number(j.experienceYears) || 0;
+
+  const list = items.map((j) => `  {
+    slug: ${JSON.stringify(j.slug)},
+    name: ${JSON.stringify(nameEn(j))},
+    nameCn: ${JSON.stringify(j.nameCn || "")},
+    birthYear: ${Number(j.birthYear) || new Date().getFullYear() - (exp(j) || 30)},
+    position: ${JSON.stringify(j.positionEn || j.position || "Chief Physician")},
+    education: ${JSON.stringify((Array.isArray(j.educationEn) ? j.educationEn : []).filter(Boolean))},
+    experienceStart: ${new Date().getFullYear() - (exp(j) || 30)},
+    experienceYears: ${exp(j)},
+    specialization: ${JSON.stringify(specEn(j))},
+    description: ${JSON.stringify(j.bioEn || j.bio || "")},
+    achievements: [],
+    cabLocation: ${JSON.stringify(j.cabLocation || { bukhta: "Dadonghai", hotel: "TAIJI Medical Center", floor: "1st floor" })},
+    detailedBio: ${JSON.stringify(j.detailedBioEn || j.detailedBio || j.bio || "")},
+    status: ${JSON.stringify(j.status || "active")},
+  },`).join("\n");
+
+  const ts = `// ============================================================================
+// EN doctors — AUTO-GENERATED from content/doctors (CMS). DO NOT EDIT MANUALLY.
+// Source: Static CMS → sync-content.mjs → vrachi.en.ts (${items.length} doctors)
+// ============================================================================
+
+export type VrachEn = {
+  slug: string;
+  name: string;
+  nameCn: string;
+  birthYear: number;
+  position: string;
+  education: string[];
+  experienceStart: number;
+  experienceYears: number;
+  specialization: string[];
+  description: string;
+  achievements: string[];
+  cabLocation: { bukhta: string; hotel: string; floor: string };
+  detailedBio: string;
+  teacher?: string;
+  militaryExperience?: string;
+  internationalExperience?: string;
+  status?: "active" | "archive";
+};
+
+export const VRACHI_EN: VrachEn[] = [
+${list}
+];
+
+export function getVrachEnBySlug(slug: string): VrachEn | undefined {
+  return VRACHI_EN.find((v) => v.slug === slug);
+}
+`;
+  const out = join(DATA, "vrachi.en.ts");
+  const prev = existsSync(out) ? readFileSync(out, "utf-8") : "";
+  if (prev !== ts) {
+    writeFileSync(out, ts);
+    changed.push(`doctors EN 渲染层: vrachi.en.ts 重写（${items.length} 人）`);
+  }
+}
+
 // ---------- 3) 联系方式 ----------
 function syncContacts() {
   const f = join(CONTENT, "settings", "contacts.json");
@@ -143,6 +247,7 @@ function syncContacts() {
 syncPrices();
 syncDoctors();
 renderDoctors();
+renderDoctorsEn();
 syncContacts();
 
 console.log(

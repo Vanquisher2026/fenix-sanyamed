@@ -22,6 +22,10 @@ const DOCTOR_PHOTOS: Record<string, string> = {
   "yao-dun-yuan": "/images/doctor-yao-dun-yuan-khubejskij-tcm.jpg",
   "se-li-tsyun": "/images/doctor-se-li-tsyun-khunanskij-tcm.jpg",
   "khu-yumei": "/images/doctor-khu-yumei-posol-druzhby-tcm-ukrainy.jpg",
+  "sun-vensyue": "/images/doctors/sun-vensyue.jpg",
+  "uj-sihaj": "/images/doctors/uj-sihaj.jpg",
+  "van-czunhay": "/images/doctors/van-czunhay.jpg",
+  "van-limin": "/images/doctors/van-limin.jpg",
 };
 
 export async function generateStaticParams() {
@@ -139,7 +143,14 @@ export default async function VrachPage({ params }: Props) {
           <p className="mb-1 text-zinc-500">
             {v.nameCn} · {v.birthYear} г.р.
           </p>
-          <p className="mb-6 text-lg text-[var(--primary)]">{v.position}</p>
+          <p className="mb-2 text-lg text-[var(--primary)]">{v.position}</p>
+          {v.status === "archive" && (
+            <p className="mb-4 inline-block rounded-lg bg-zinc-100 px-3 py-1 text-sm text-zinc-600">
+              Врач ранее работал в центре — страница сохранена как архивные данные о команде.
+              Актуальный состав:{" "}
+              <a href="/vrachi/" className="underline">наши врачи</a>
+            </p>
+          )}
 
           <p className="text-base leading-relaxed text-zinc-700">
             {v.description}
