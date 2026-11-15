@@ -42,17 +42,7 @@ export const LOCATIONS: Location[] = [
     lat: 18.2006,
     lng: 109.6555,
     doctors: ["khu-yumei"],
-  },
-  {
-    slug: "sanyavan",
-    name: "fenix-sanyamed Саньяван",
-    bukhta: "Саньяван",
-    hotel: "Отель Palm Beach (Палм Бич)",
-    address: "бухта Саньяван, город Санья, остров Хайнань",
-    lat: 18.2551,
-    lng: 109.5023,
-    doctors: ["yao-dun-yuan"],
-  },
+  }
   {
     slug: "sanyabey",
     name: "fenix-sanyamed Саньябэй",
@@ -61,7 +51,7 @@ export const LOCATIONS: Location[] = [
     address: "бухта Саньябэй, город Санья, остров Хайнань",
     lat: 18.2893,
     lng: 109.4925,
-    doctors: [],
+    doctors: ["yao-dun-yuan"],
   },
 ];
 
