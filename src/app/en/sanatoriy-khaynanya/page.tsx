@@ -33,7 +33,7 @@ const FAQ = [
   },
   {
     q: "Do I need a visa to come for treatment on Hainan?",
-    a: "Most visitors from Europe, North America, Australia and much of Asia do not need a visa for a short stay in Hainan. Entry requirements depend on your nationality — send us your passport details and we will confirm the exact position for your case before you book anything.",
+    a: "Russian citizens do not need a visa: Hainan has a visa-free regime for stays of up to 30 days, and treatment is an allowed purpose of entry. Most visitors from Europe, North America, Australia and much of Asia also do not need a visa for a short stay. Entry requirements depend on your nationality — send us your passport details and we will confirm the exact position for your case before you book anything.",
   },
   {
     q: "What is the best time of year to travel to Hainan for treatment?",
