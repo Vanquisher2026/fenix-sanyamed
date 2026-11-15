@@ -42,7 +42,7 @@ export const LOCATIONS: Location[] = [
     lat: 18.2006,
     lng: 109.6555,
     doctors: ["khu-yumei"],
-  }
+  },
   {
     slug: "sanyabey",
     name: "fenix-sanyamed Саньябэй",
