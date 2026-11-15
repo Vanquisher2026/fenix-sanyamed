@@ -53,6 +53,16 @@ export const LOCATIONS: Location[] = [
     lng: 109.4925,
     doctors: ["yao-dun-yuan"],
   },
+  {
+    slug: "khaitanvan",
+    name: "fenix-sanyamed Хайтанвань",
+    bukhta: "Хайтанвань",
+    hotel: "уточняется",
+    address: "бухта Хайтанвань, город Санья, остров Хайнань",
+    lat: 18.3416,
+    lng: 109.7206,
+    doctors: [],
+  },
 ];
 
 // Главный офис для Schema.org MedicalClinic (MainEntity)

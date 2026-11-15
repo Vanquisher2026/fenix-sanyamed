@@ -39,10 +39,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title:
-      v.slug === "chzhan-li-in"
-        ? "Чжан Ли Ин — врач ТКМ, опыт 43 лет"
-        : `${v.nameRu} — ${v.specialization[0]}, опыт ${v.experienceYears} лет`,
-    description: `${v.nameRu} — ${v.position.toLowerCase()}, опыт ${v.experienceYears} лет. Специализация: ${v.specialization.slice(0, 4).join(", ")}.`,
+      v.experienceYears > 0
+        ? `${v.nameRu} — ${v.specialization[0] || "врач ТКМ"}, опыт ${v.experienceYears} лет`
+        : `${v.nameRu} — врач ТКМ санатория ТАЙЦЗИ (архивный профиль)`,
+    description: v.experienceYears > 0
+      ? `${v.nameRu} — ${v.position.toLowerCase()}, опыт ${v.experienceYears} лет. Специализация: ${v.specialization.slice(0, 4).join(", ")}.`
+      : `${v.nameRu} — ${v.position.toLowerCase()} санатория ТАЙЦЗИ. Архивный профиль команды.`,
     alternates: {
       canonical: `https://www.fenix-sanyamed.com/vrachi/${v.slug}/`,
       languages: {

@@ -103,8 +103,7 @@ export default function VrachiPage() {
         {/* Доверие: краткая сводка */}
         <div className="mx-auto mt-12 max-w-3xl rounded-2xl bg-[var(--surface-alt)] p-6 text-center">
           <p className="font-serif italic leading-relaxed text-zinc-700">
-            Все врачи принимают в филиалах санатория ТАЙЦЗИ в бухтах Дадунхай
-            и Ялунвань. На каждом приёме присутствует русскоязычный
+            Врачи принимают в филиалах санатория ТАЙЦЗИ в бухтах Дадунхай и Ялунвань; филиалы также работают в бухтах Саньябэй и Хайтанвань. На каждом приёме присутствует русскоязычный
             медицинский переводчик — это входит в стоимость программы.
           </p>
         </div>
@@ -128,7 +127,9 @@ export default function VrachiPage() {
                   {v.nameRu} ({v.nameCn})
                 </Link>
                 <span className="text-sm text-zinc-500">
-                  {" "}— {v.position}, опыт {v.experienceYears} лет{v.status === "archive" ? " · ранее работал в центре" : ""}
+                  {" "}— {v.position}
+                  {v.experienceYears > 0 ? `, опыт ${v.experienceYears} лет` : ""}
+                  {v.status === "archive" ? " · ранее работал в центре" : ""}
                 </span>
               </li>
             ))}
