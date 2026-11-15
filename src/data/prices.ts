@@ -81,9 +81,17 @@ export const PROCEDURES: PriceRow[] = [
     slug: "fitoterapiya",
     name: "Фитотерапия (отвар трав, 中药)",
     duration: "ежедневно",
-    course: "по назначению",
+    course: "весь курс",
     from: 80,
     to: 300, // за день курса
+  },
+  {
+    slug: "iglanozh",
+    name: "Иглонож (小针刀)",
+    duration: "20–40 мин",
+    course: "1–5 сеансов",
+    from: 500,
+    to: 500, // фикс. цена за сеанс (прайс 2026)
   },
 ];
 
