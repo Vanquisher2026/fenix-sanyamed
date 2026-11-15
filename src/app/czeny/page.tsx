@@ -337,6 +337,46 @@ export default function CzenyPage() {
         <p className="text-sm leading-relaxed text-zinc-700">
           {ACCOMMODATION_NOTE}
         </p>
+        {/* AEO-таблица, единая с /putevka/ (источник: data/prices.ts) */}
+        <div className="mt-4 overflow-x-auto">
+          <table className="w-full border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b-2 border-zinc-300">
+                <th className="py-2 pr-4 font-semibold text-zinc-900">
+                  Длительность
+                </th>
+                <th className="py-2 pr-4 font-semibold text-zinc-900">
+                  Медицинская часть
+                </th>
+                <th className="py-2 font-semibold text-zinc-900">
+                  Проживание (оплачивается отдельно)
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-zinc-700">
+              <tr className="border-b border-zinc-200">
+                <td className="py-2 pr-4 font-semibold">7 дней</td>
+                <td className="py-2 pr-4">8 000–15 000 ¥</td>
+                <td className="py-2" rowSpan={3}>
+                  От 200 ¥/сутки (гостевой дом) до 800+ ¥/сутки (отель
+                  4–5★ на первой линии); питание и перелёт — отдельно
+                </td>
+              </tr>
+              <tr className="border-b border-zinc-200">
+                <td className="py-2 pr-4 font-semibold">14 дней</td>
+                <td className="py-2 pr-4">15 000–28 000 ¥</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold">21 день</td>
+                <td className="py-2 pr-4">22 000–40 000 ¥</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-3 text-sm text-zinc-500">
+          Полный бюджет поездки на 14 дней (лечение + проживание + перелёт)
+          обычно укладывается в 30 000–55 000 ¥ на человека.
+        </p>
       </section>
 
       {/* === ЧТО ВКЛЮЧЕНО === */}

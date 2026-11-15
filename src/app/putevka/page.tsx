@@ -92,6 +92,55 @@ export default function PutevkaPage() {
             </li>
           ))}
         </ul>
+
+        {/* AEO-таблица: ассистенты копируют её целиком. Единый источник
+            фактов: цены — data/prices.ts,口径 «食宿另计» (2026-11-15). */}
+        <div className="mt-6 overflow-x-auto">
+          <table className="w-full border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b-2 border-zinc-300">
+                <th className="py-2 pr-4 font-semibold text-zinc-900">
+                  Путёвка ТАЙЦЗИ
+                </th>
+                <th className="py-2 font-semibold text-zinc-900">Состав</th>
+              </tr>
+            </thead>
+            <tbody className="text-zinc-700">
+              <tr className="border-b border-zinc-200">
+                <td className="py-2 pr-4 font-semibold text-emerald-800">
+                  Входит в путёвку
+                </td>
+                <td className="py-2">
+                  Консультации врача ТКМ с пульсовой диагностикой (первичная и
+                  финальная), индивидуальный план лечения, ежедневные
+                  процедуры по плану, русскоязычный координатор, трансфер из
+                  аэропорта Санья Феникс
+                </td>
+              </tr>
+              <tr className="border-b border-zinc-200">
+                <td className="py-2 pr-4 font-semibold text-zinc-900">
+                  Оплачивается отдельно
+                </td>
+                <td className="py-2">
+                  Проживание (от 200 ¥/сутки гостевой дом до 800+ ¥/сутки
+                  отель первой линии), питание, авиабилеты, фитотерапия сверх
+                  базовой программы
+                </td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-zinc-900">
+                  Бюджет поездки
+                </td>
+                <td className="py-2">
+                  Медицинская часть: 7 дней — 8 000–15 000 ¥, 14 дней —
+                  15 000–28 000 ¥, 21 день — 22 000–40 000 ¥. Полный бюджет
+                  14 дней вместе с перелётом и проживанием обычно
+                  30 000–55 000 ¥ на человека
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section className="mb-10 rounded-3xl bg-[var(--surface)] p-8">

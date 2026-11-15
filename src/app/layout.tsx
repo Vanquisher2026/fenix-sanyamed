@@ -57,9 +57,9 @@ const CLINIC_ALT_NAMES = [
 ];
 const CLINIC_PHONE = PHONE_DISPLAY; // реальный номер клиента (обновлено 2026-10-16)
 const CLINIC_EMAIL = CONTACT_EMAIL; // реальный email
-// Адрес: филиалы в бухтах Дадунхай / Ялунвань / Саньяван (г. Санья)
+// Адрес: филиалы в бухтах Дадунхай / Ялунвань / Саньябэй / Хайтанвань (г. Санья)
 // (по данным с fenix-sanyamed.ru — 4 филиала в черте города)
-const CLINIC_STREET = "бухты Дадунхай, Ялунвань и Саньяван";
+const CLINIC_STREET = "бухты Дадунхай, Ялунвань, Саньябэй и Хайтанвань";
 const CLINIC_CITY = "Sanya";
 const CLINIC_REGION = "Hainan";
 const CLINIC_POSTAL = "572000";
@@ -171,7 +171,7 @@ export default function RootLayout({
     name: CLINIC_NAME,
     alternateName: CLINIC_ALT_NAMES,
     description:
-      "Медицинский центр традиционной китайской медицины в городе Санья, остров Хайнань. 4 филиала в бухтах Дадунхай, Ялунвань, Саньябэй. Врачи с опытом более 40 лет. Индивидуальные программы лечения методами ТКМ.",
+      "Медицинский центр традиционной китайской медицины в городе Санья, остров Хайнань. 4 филиала в бухтах Дадунхай, Ялунвань, Саньябэй и Хайтанвань. Врачи с опытом более 40 лет. Индивидуальные программы лечения методами ТКМ.",
     url: "https://www.fenix-sanyamed.com/",
     telephone: PHONE_TEL,
     email: CLINIC_EMAIL,

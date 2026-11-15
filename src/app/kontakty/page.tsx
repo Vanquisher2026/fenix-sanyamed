@@ -132,7 +132,7 @@ export default function KontaktyPage() {
             <h3 className="mb-4">Санаторий ТАЙЦЗИ</h3>
             <span className="gold-line mb-4 block" />
             <p className="mb-1 font-serif text-zinc-700">
-              бухты Дадунхай, Ялунвань и Саньяван
+              бухты Дадунхай, Ялунвань, Саньябэй и Хайтанвань
             </p>
             <p className="font-serif text-zinc-700">
               город Санья, остров Хайнань, Китай
@@ -237,7 +237,7 @@ export default function KontaktyPage() {
               </div>
               <p className="mb-2 font-display text-xl">Санаторий ТАЙЦЗИ</p>
               <p className="font-serif text-zinc-700">
-                бухта Дадунхай, Ялунвань, Саньяван
+                бухты Дадунхай, Ялунвань, Саньябэй, Хайтанвань
               </p>
               <p className="font-serif text-sm text-zinc-500">
                 город Санья, остров Хайнань
@@ -264,7 +264,7 @@ export default function KontaktyPage() {
             </h3>
             <p className="mb-3 font-serif text-zinc-700">
               Аэропорт Санья Феникс (SYX) находится примерно в 30 километрах
-              от заливов Дадунхай и Саньяван, около 50 километров до Ялонгбэя.
+              от бухт Дадунхай и Саньябэй, 30–60 минут до Ялунвани и Хайтанваня.
               На такси или в заказном трансфере — 40–60 минут в зависимости от
               трафика. Координатор сообщает конкретный адрес отеля и
               ориентиры после бронирования.
