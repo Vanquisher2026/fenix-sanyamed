@@ -140,7 +140,7 @@ export default function Page() {
            (совпадает с карточкой организации). */}
       <section className="mb-10 rounded-2xl border border-zinc-200 bg-zinc-50 p-6">
         <h2 className="mb-4 text-2xl font-semibold">
-          Где читать независимые отзывы
+          Где читать независимые отзывы о лечении на Хайнане
         </h2>
         <p className="mb-4 leading-relaxed text-zinc-700">
           Истории выше собраны самим санаторием, поэтому мы рекомендуем
