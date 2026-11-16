@@ -515,7 +515,8 @@ export default function RootLayout({
     logo: "https://www.fenix-sanyamed.com/images/logo-cnru-friendship.png",
     image: "https://www.fenix-sanyamed.com/images/logo-cnru-friendship.png",
     sameAs: [
-      // заполняется при появлении соцсетей; пустой список = не выдумываем
+      // только реальные профили (VK группа подтверждена); добавлять по мере появления
+      "https://vk.ru/club242571810",
     ],
     contactPoint: [
       {
