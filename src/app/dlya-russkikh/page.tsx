@@ -240,6 +240,59 @@ export default function DlyaRusskikhPage() {
       </section>
 
       {/* Ссылки на ключевые разделы */}
+      {/* === ПРАКТИЧЕСКИЙ ЧЕК-ЛИСТ (по данным памятки АТОР, ноябрь 2026) === */}
+      <section className="mb-10 rounded-3xl border border-emerald-200 bg-emerald-50/50 p-6">
+        <h2 className="mb-3 text-2xl font-semibold">
+          Первый раз в Китай: практический чек-лист
+        </h2>
+        <p className="mb-4 text-sm text-zinc-600">
+          Памятка для тех, кто летит на лечение впервые — по рекомендациям
+          туроператоров (АТОР, ноябрь 2026) и нашего координатора.
+        </p>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div className="rounded-2xl bg-white p-4">
+            <h3 className="mb-2 font-semibold text-emerald-800">Телефон и связь</h3>
+            <ul className="space-y-1 text-sm text-zinc-700">
+              <li>· До вылета установите Alipay (русская версия, регистрация на российский номер) и мессенджер WeChat</li>
+              <li>· Навигатор — AMap (Google/Яндекс Карты в Китае работают плохо); такси — DiDi прямо внутри Alipay</li>
+              <li>· Переводчик с офлайн-пакетом китайского (Яндекс Переводчик или встроенный в WeChat)</li>
+              <li>· Туристическая eSIM с обходом блокировок — чтобы WhatsApp и Telegram работали без сбоев</li>
+            </ul>
+          </div>
+          <div className="rounded-2xl bg-white p-4">
+            <h3 className="mb-2 font-semibold text-emerald-800">Деньги</h3>
+            <ul className="space-y-1 text-sm text-zinc-700">
+              <li>· Наличные юани — обязательно: в Санья наличные принимают везде, а вот метро и магазины самообслуживания — только QR-код</li>
+              <li>· Обменяйте часть денег на юани ещё в России; доллары — только нового образца</li>
+              <li>· Российские карты работают ограниченно; способ оплаты подскажет наш координатор до вылета</li>
+            </ul>
+          </div>
+          <div className="rounded-2xl bg-white p-4">
+            <h3 className="mb-2 font-semibold text-emerald-800">Чемодан пациента</h3>
+            <ul className="space-y-1 text-sm text-zinc-700">
+              <li>· Аптечка: средства для ЖКТ и от аллергии (реакция на непривычную кухню) + личные лекарства в оригинальной упаковке</li>
+              <li>· ⚠️ Рецептурные препараты с кодеином в Китай ввозить нельзя без рецепта и заключения — проверьте состав своих лекарств</li>
+              <li>· Пауэрбанк — только с маркировкой CCC на корпусе, иначе изымут на внутренних рейсах</li>
+              <li>· Бумажные платочки, антисептик, универсальный переходник для розеток</li>
+            </ul>
+          </div>
+          <div className="rounded-2xl bg-white p-4">
+            <h3 className="mb-2 font-semibold text-emerald-800">Быт и общение</h3>
+            <ul className="space-y-1 text-sm text-zinc-700">
+              <li>· Сохраните адрес санатория иероглифами — покажете водителю такси</li>
+              <li>· В общественных туалетах часто нет бумаги — носите с собой</li>
+              <li>· Фраза «бу ла» (не остро) пригодится в кафе; порции часто рассчитаны на компанию</li>
+              <li>· Номер для некурящих просите при бронировании отеля</li>
+            </ul>
+          </div>
+        </div>
+        <p className="mt-4 text-sm text-zinc-500">
+          При записи на программу координатор ТАЙЦЗИ проводит короткий
+          инструктаж по оплате и связи и остаётся на связи в WhatsApp/Telegram
+          на весь курс.
+        </p>
+      </section>
+
       <section className="mb-10">
         <h2 className="mb-4 text-2xl font-semibold">Полезные разделы</h2>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
