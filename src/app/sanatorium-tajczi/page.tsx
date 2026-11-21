@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { VRACHI } from "@/data/vrachi";
 import { PACKAGES, fmtPrice } from "@/data/prices";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   // absolute: layout 的 template 会追加 "| Санаторий ТАЙЦЗИ"，
@@ -14,10 +15,11 @@ export const metadata: Metadata = {
   // → title 必须完整包含连续的 «санаторий китайской медицины тайцзи»，
   //   否则该词族无法命中（旧站靠这个排名，我们此前只写简称）。
   title: {
-    absolute: "Санаторий китайской медицины ТАЙЦЗИ в Санье, Хайнань",
+    absolute:
+      "Санаторий китайской медицины ТАЙЦЗИ в Санье — цены, врачи, программы",
   },
   description:
-    "Санаторий китайской традиционной восстановительной медицины ТАЙЦЗИ в Санья (Хайнань): врачи с опытом 40+ лет, иглоукалывание, туйна, фитотерапия, моксотерапия. Программы от 7 до 21 дня, русскоязычный координатор, трансфер из аэропорта. Официальный сайт санатория.",
+    "Санаторий китайской традиционной восстановительной медицины ТАЙЦЗИ в Санья (Хайнань): программы от 8 000 ¥ за 7 дней, врачи с опытом 40+ лет, иглоукалывание, туйна, фитотерапия. Русскоязычный координатор и трансфер включены. Официальный сайт — цены 2026, четыре филиала в Санья.",
   alternates: {
     canonical: "https://www.fenix-sanyamed.com/sanatorium-tajczi/",
     languages: {
@@ -395,22 +397,17 @@ export default function SanatoriyTajcziPage() {
         </div>
       </section>
 
-      {/* === CTA === */}
-      <section className="mb-10 rounded-3xl border border-emerald-200 bg-emerald-50/50 p-8 text-center">
-        <h2 className="mb-3 text-2xl font-semibold">
+      {/* === CTA + ФОРМА === */}
+      <section className="mb-10 rounded-3xl border border-emerald-200 bg-emerald-50/50 p-8">
+        <h2 className="mb-3 text-center text-2xl font-semibold">
           Запись на консультацию в санаторий ТАЙЦЗИ
         </h2>
-        <p className="mb-5 text-zinc-700">
+        <p className="mb-6 text-center text-zinc-700">
           Оставьте заявку — русскоязычный координатор свяжется с вами в
           течение рабочего дня, ответит на вопросы и поможет выбрать врача
-          и программу.
+          и программу. Консультация бесплатная.
         </p>
-        <Link
-          href="/kontakty/"
-          className="inline-block rounded-full bg-emerald-600 px-8 py-3 text-base font-semibold text-white transition hover:bg-emerald-700"
-        >
-          Записаться на приём
-        </Link>
+        <ContactForm />
       </section>
 
       {/* === BRAND KW（语义自然嵌入，非堆砌）=== */}

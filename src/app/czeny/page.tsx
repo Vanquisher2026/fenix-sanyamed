@@ -9,11 +9,12 @@ import {
 } from "@/data/prices";
 import { REAL_PRICE_GROUPS, REAL_PRICE_TOTAL } from "@/data/prices.real";
 import { waFaqMessage } from "@/data/contacts";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Цены на лечение в Санья — сколько стоит курс ТКМ",
+  title: "Цены санатория ТАЙЦЗИ в Санья — сколько стоит курс лечения ТКМ",
   description:
-    "Полный прайс-лист санатория ТКМ в Санья: 156 процедур с ценами в юанях — иглоукалывание, прижигание, массаж Туйна, косметология и SPA. Стоимость программ лечения, что входит в курс, как рассчитывается бюджет поездки.",
+    "Актуальные цены санатория тайцзи в Санья на 2026 год: 156 процедур с ценами в юанях — иглоукалывание, прижигание, массаж Туйна, косметология и SPA. Стоимость курса лечения: 7 дней от 8 000 ¥, 14 дней от 15 000 ¥. Что входит в программу и как рассчитать бюджет поездки на Хайнань.",
   alternates: {
     canonical: "https://www.fenix-sanyamed.com/czeny/",
     languages: {
@@ -34,6 +35,18 @@ export const metadata: Metadata = {
 
 // --- FAQ: реальные формулировки запросов из Yandex Wordstat ---
 const FAQ = [
+  {
+    q: "Сколько стоит курс лечения в санатории ТАЙЦЗИ?",
+    a: "Курс лечения складывается из назначенных врачом процедур. Ориентиры: программа на 7 дней — 8 000–15 000 ¥, на 14 дней — 15 000–28 000 ¥, на 21 день — 22 000–40 000 ¥. В сумму входят все процедуры курса, консультации врача ТКМ с пульсовой диагностикой, базовая фитотерапия и русскоязычный переводчик. Точную стоимость вашей программы врач называет бесплатно на первой консультации — до начала лечения.",
+  },
+  {
+    q: "Актуальные цены на сеансы в 2026 году?",
+    a: "Стоимость одного сеанса в санатории ТАЙЦЗИ не менялась с начала сезона: иглоукалывание и массаж Туйна — 150–450 ¥, моксотерапия — 100–300 ¥, косметологические процедуры — 100–400 ¥. Полный прайс на 156 позиций с китайскими названиями — в таблицах выше на этой странице. За актуальностью следит администратор при записи.",
+  },
+  {
+    q: "Какой примерный бюджет поездки на 14 дней?",
+    a: "Полный бюджет складывается из трёх частей: лечение 15 000–28 000 ¥, проживание от 200 ¥/сутки (гостевой дом) до 800+ ¥/сутки (отель на первой линии), перелёт Москва–Санья туда-обратно. На практике большинство пациентов укладывается в 30 000–55 000 ¥ на человека за 14 дней с лечением, проживанием и перелётом. Переводчик и трансфер из аэропорта — бесплатно.",
+  },
   {
     q: "Лечение на Хайнане — какие цены в санатории ТАЙЦЗИ?",
     a: "Медицинская часть программ в Санья: 7 дней — 8 000–15 000 ¥, 14 дней — 15 000–28 000 ¥, 21 день — 22 000–40 000 ¥. Проживание и питание бронируются отдельно (от 200 ¥/сутки). Полный бюджет поездки на 14 дней с перелётом обычно 30 000–55 000 ¥ на человека.",
@@ -449,29 +462,33 @@ export default function CzenyPage() {
         <strong>Важно:</strong> {PRICE_DISCLAIMER}
       </div>
 
-      {/* === CTA === */}
-      <div className="rounded-lg bg-emerald-700 p-6 text-center text-white">
-        <h2 className="mb-2 text-xl font-semibold">
+      {/* === CTA + ФОРМА === */}
+      <div className="mb-10 rounded-lg bg-emerald-700 p-6 text-white">
+        <h2 className="mb-2 text-center text-xl font-semibold">
           Узнать точную стоимость вашей программы
         </h2>
-        <p className="mb-4 text-sm opacity-90">
-          Опишите состояние в сообщении — врач ответит и назовёт ориентир по
+        <p className="mb-6 text-center text-sm opacity-90">
+          Опишите состояние в заявке — врач ответит и назовёт ориентир по
           вашей программе. Консультация бесплатная.
         </p>
-        <div className="flex flex-wrap justify-center gap-3">
-          <Link
-            href="/kontakty/"
-            className="inline-block rounded-md bg-white px-6 py-3 font-semibold text-emerald-800 hover:bg-emerald-50"
-          >
-            Контакты и запись
-          </Link>
-          <a
-            href="https://wa.me/8613158954278"
-            className="inline-block rounded-md border border-white px-6 py-3 font-semibold hover:bg-emerald-600"
-          >
-            Написать в WhatsApp
-          </a>
+        <div className="rounded-lg bg-white p-5 text-zinc-900">
+          <ContactForm />
         </div>
+      </div>
+
+      <div className="mb-10 flex flex-wrap justify-center gap-3">
+        <Link
+          href="/kontakty/"
+          className="inline-block rounded-md border border-emerald-700 px-6 py-3 font-semibold text-emerald-800 hover:bg-emerald-50"
+        >
+          Контакты и запись
+        </Link>
+        <a
+          href="https://wa.me/8613158954278"
+          className="inline-block rounded-md bg-emerald-700 px-6 py-3 font-semibold text-white hover:bg-emerald-600"
+        >
+          Написать в WhatsApp
+        </a>
       </div>
     </main>
   );
